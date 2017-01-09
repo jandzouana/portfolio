@@ -7,11 +7,11 @@ session_start();
     <title>About me </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="stylesheets/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="scripts/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="scripts/indexanim.js"></script>
-		<link rel="icon" href="pictures/brand/logovec4.png">
+    <link href="../stylesheets/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../scripts/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../scripts/indexanim.js"></script>
+		<link rel="icon" href="../pictures/brand/logovec4.png">
 
     <!--[if IE]>
         <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -21,15 +21,15 @@ session_start();
   <body>
 		<div class="container" id="container-a">
 			<nav class="mob-nav-bar">
-				<img class = "nav-logo" src="pictures/brand/logovec4.png" alt="logo">
+				<img class = "nav-logo" src="../pictures/brand/logovec4.png" alt="logo">
 				<a href="#" class="menu-button" id="menuButton">
     			<span class="burger-icon"></span>
 				</a>
 			</nav>
 			<div class = "menu">
 				<div id="brand">
-						<a href="index.html" id = "logo">
-							<img src="pictures/brand/logovec4.png" alt="logo">
+						<a href="../" id = "logo">
+							<img src="../pictures/brand/logovec4.png" alt="logo">
 						</a>
 
 					<div id="logo-text">
@@ -39,31 +39,31 @@ session_start();
 				</div>
 				<nav class="main-nav">
 					<ul class="main-nav-ul">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.php">About me</a></li>
+						<li><a href="../">Home</a></li>
+						<li><a href="../about">About me</a></li>
 						<li class="cont-subs"><a href="#">Art<span class="sub-arrow"></span></a></li>
 						<ul>
-							<li><a href="art/characters.html">Character Designs</a></li>
-							<li><a href="art/digital.html">Digital Art</a></li>
-							<li><a href="art/traditional.html">Traditional Art</a></li>
+							<li><a href="../art/characters">Character Designs</a></li>
+							<li><a href="../art/illustrations">Illustrations</a></li>
+							<li><a href="../art/sketches">Sketches</a></li>
 						</ul>
-						<li><a href="animation.html">Animation</a></li>
+						<li><a href="../animation">Animation</a></li>
 						<li><a href="https://vimeo.com/123391160">Animation Reel</a></li>
 					</ul>
 				</nav>
 				<div class = "footer">
 					<div id= "soc2" class="social-media">
 						<a class="iconcon" href="http://youtube.com/jessicaworks951" target="_blank">
-	            <img class="icon" id="youtube" src="icons/ytw.svg" alt="youtube">
+	            <img class="icon" id="youtube" src="../icons/ytw.svg" alt="youtube">
 	          </a>
 						<a class="iconcon" id = "link" href="http://instagram.com/jebranart" target="_blank">
-							<img class="icon" src="icons/igw.svg" alt="instagram">
+							<img class="icon" src="../icons/igw.svg" alt="instagram">
 						</a>
 						<a class="iconcon" href="http://twitter.com/jebranart" target="_blank">
-							<img class="icon" src="icons/twitterw.svg" alt="twitter">
+							<img class="icon" src="../icons/twitterw.svg" alt="twitter">
 						</a>
 						<a class="iconcon" href="http://thejandz.wordpress.com" target="_blank">
-							<img class="icon" src="icons/wpw.svg" alt="wordpress">
+							<img class="icon" src="../icons/wpw.svg" alt="wordpress">
 						</a>
 					</div>
 					<div id="copy"><h3>Copyright © 2016 Jessica Andzouana</h3></div>
@@ -71,12 +71,12 @@ session_start();
 			</div>
 			<nav class="bot-nav">
 				<ul class="bot-nav-ul">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.php">About me</a></li>
-					<li><a href="art/characters.html">Character Designs</a></li>
-					<li><a href="art/digital.html">Digital Art</a></li>
-					<li><a href="art/traditional.html">Traditional Art</a></li>
-					<li><a href="animation.html">Animation</a></li>
+					<li><a href="../">Home</a></li>
+					<li><a href="../about">About me</a></li>
+					<li><a href="../art/characters">Character Designs</a></li>
+					<li><a href="../art/illustrations">Illustrations</a></li>
+					<li><a href="../art/sketches">Sketches</a></li>
+					<li><a href="../animation">Animation</a></li>
 					<li><a href="https://vimeo.com/123391160">Animation Reel</a></li>
 					<li>
 						<div id= "soc3" class="social-media">
@@ -109,8 +109,8 @@ When I started attending university, I wanted to extend my knowledge beyond the 
 						</div>
 					</div>
 					<div class="link-box">
-						<a href="docs/artist.pdf" target="_blank"> Artist Statement</a>
-						<a href="docs/resume.pdf" target="_blank"> Resume </a>
+						<a href="../docs/artist.pdf" target="_blank"> Artist Statement</a>
+						<a href="../docs/resume.pdf" target="_blank"> Resume </a>
 					</div>
 
 					<section class="contact">

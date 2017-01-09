@@ -350,13 +350,25 @@
 	.contact{
 		padding: 0px 90px 0px 90px;
 		label, #submit{
-			font-size: 5.5vh;
+			font-size: 4vh;
+		}
+		.right{
+			height: 40%;
+			label{
+				height: 20%;
+			}
+			textarea{
+				height: 80%;
+			}
+		}
+		.left{
+			height: 60%;
 		}
 		.top{
-			height: 90%;
+			height: 80%;
 		}
 		#submit{
-			height: 10%;
+			height: 20%;
 		}
 	}
 	.link-box{
@@ -370,7 +382,26 @@
 			font-size: 8.6vh;
 		}
 		h3{
-			font-size: 5vh;
+			font-size: 3.5vh;
 		}
 	}
 }
+
+@media only screen and (max-width:$cut-off) and (orientation:landscape) and (max-height: $max-land-height - 200){
+		.text{
+			h2{
+				//font-size: 8.6vh;
+			}
+			h3{
+				font-size: 5vh;
+			}
+		}
+		.contact{
+			.top{
+				height: 90%;
+			}
+			#submit{
+				height: 10%;
+			}
+		}
+	}

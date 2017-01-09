@@ -1,0 +1,476 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "../externals/btns/btns.scss";
+@import "fonts";
+@import "colors";
+@import "variable";
+@import "responsive";
+
+
+/*Basics*/
+* {
+  ////border: 1px solid red !important;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.grid {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	//border: 3px solid red;
+	height: 100vh;
+	min-height: 700px;
+		padding:{
+			top: 70px;
+			bottom:40px;
+			right: 25px;
+			left: 25px;
+		}
+	}
+
+header {
+	//border: 1px solid green;
+	display: flex;
+	flex-flow: row wrap;
+	position: relative;
+	height: 20%;
+	align-items: center;
+}
+/*Logo pieces*/
+
+#brand {
+	height: 100%;
+	width: auto;
+	display: flex;
+	justify-content: flex-start;
+	flex-flow: row nowrap;
+	align-items: flex-start;
+	//border: 1px solid orange;
+	a{
+		text-decoration: none;
+	}
+}
+#logo-org {
+	opacity: 1;
+	background-image: url(../pictures/brand/logovec4.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 100px;
+	width: 100px;
+}
+#logo-text{
+	//border-left: 1px solid #767875;
+	position: absolute;
+	right: 0;
+	height: 100%;
+	padding-left: 15px;
+	margin-left: 15px;
+
+	//centering text
+	display: flex;
+	flex-direction: column;
+  justify-content: flex-start;
+	//align-items: flex-end;
+
+	//extending border line upward
+		h2 {
+			padding-top: 10px;
+			margin-bottom: 6px;
+		}
+		h3 {
+			text-align: right;
+			padding-bottom: 10px;
+			margin-left: 4px;
+			color: $sub-head-color;
+		}
+}
+
+/*social media*/
+.social-media{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+	//width: 270px;
+	height: 100%;
+	//position: absolute;
+	//right: 0;
+	a{
+		text-decoration: none;
+	}
+
+}
+/*soc 1 == social media icons in header
+soc 2 == social media icons in footer*/
+#soc2 {
+	display: none;
+	align-self: center;
+	margin:{
+		top: 100px;
+	}
+}
+
+#soc1{
+	//background-color: pink;
+	display: none;
+}
+
+/*social media icons*/
+.iconcon{
+	padding: 3px;
+	width: $icon-size;
+	height: $icon-size;
+	opacity: 0.65;
+	&:hover{
+		opacity: 1.0;
+		transition: opacity .35s;
+	}
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+#yt{
+	background-image: url(../icons/yt.svg);
+}
+
+#ig{
+	background-image: url(../icons/ig.svg);
+}
+#tw{
+	background-image: url(../icons/twitter.svg);
+}
+#wp{
+	background-image: url(../icons/wp.svg);
+}
+/*Main: Navigation links, portfolio button and footer social media box*/
+.index-main {
+	//border: 3px solid blue;
+	display: flex;
+	flex-direction: column;
+	height: 80%;
+}
+/*Picture that shows up in mobile version instead of navigation links*/
+#profile{
+	display: none;
+	//background-color: orange;
+	background-image: url(../pictures/profilemed.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.nav{
+	margin-top: 100px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+	//border: 1px solid purple;
+}
+.art_nav {
+	display: flex;
+	flex-flow: column nowrap;
+	position: relative;
+	/*Text for art navigation*/
+	h2, h3 {
+		font-family: AracneRegular;
+		font-size: 40px;
+		text-decoration: none;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		color: white;
+		text-align: center;
+		margin: 3px;
+	}
+}
+.imgcontainer{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+//overlay of mousehover on navigation pictures
+.overlay{
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $overlay;
+
+}
+/*Portfolio link button*/
+#box{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-top: 70px;
+	height: auto;
+	justify-content: center;
+	//background-color: blue;
+	a{
+		text-decoration: none;
+		//size of button
+		font-size: 23px;
+	}
+	.btn{
+		//display: none;
+	}
+	.portlink{
+		display: none;
+		font-family: AracneRegular;
+		margin: auto;
+		color: black;
+	}
+}
+
+
+
+
+/*Slight adjustment to desktop version*/
+@media only screen and (max-width: 900px){
+	.imgcontainer{
+		width: 180px;
+		height: auto;
+	}
+	.art_nav{
+		h2, h3{
+			font-size: 17px;
+		}
+	}
+}
+/*Tablets (Square boxes)*/
+@media only screen and (max-width: $cut-off) {
+	.index-main{
+		height: 80%;
+		align-items: center;
+	}
+	.grid {
+		height: 100vh;
+		//min-height: 400px;
+		min-height: 0;
+		padding:{
+			top: 10px;
+			bottom:10px;
+			right: 0px;
+			left: 0px;
+		}
+	}
+	#box{
+		padding-top: 30px;
+		height: 20vh;
+		width: 60%;
+		.btn{
+			font-size: 4vh;
+		}
+	}
+	.nav {
+		flex-flow: row wrap;
+		margin-top: 0px;
+		height: 60vh;
+		width: 60vh;
+		//background-color: yellow;
+	}
+	.art_nav{
+		height: 50%;
+		width: 50%;
+		h2, h3{
+			font-size: 2.5vh;
+			text-align: left;
+			opacity: 0.6;
+			background-color: black;
+			top: auto;
+			left: 10%;
+			bottom: 5%;
+			transform: translate(0%, 0%);
+
+		}
+		//border: 1px solid red;
+	}
+	.imgcontainer{
+		padding: 10px;
+		height: 100%;
+		width: auto;
+	}
+
+	.row {
+		position: static;
+		flex-flow: column nowrap;
+		height: 20%;
+		justify-content: space-around;
+		//background-color: orange;
+	//	align-items: center;
+	}
+	.social-media {
+		position: static;
+		//width: 250px;
+		//height: $sm-m-height;
+		//clear: both;
+	}
+	#brand {
+		flex-direction: column;
+		//border: 1px solid red;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		//background-color: blue;
+	}
+	#logo-cont{
+		height: 50%;
+		width: 100%;
+		//background-color: orange;
+	}
+	#logo-org{
+		position: static;
+		//background-color: yellow;
+		height: 100%;
+		width: 100%;
+	}
+	#logo-text{
+		height: 50%;
+		//background-color: green;
+		text-align: center;
+		//border-left: hidden;
+		justify-content: center;
+		padding-left: 0;
+		margin-left: 0;
+		position: static;
+		h2 {
+			padding-top: 0px;
+			margin-bottom: 0.5vh;
+			font-size: 4vh;
+		}
+		h3{
+			text-align: center;
+			padding-bottom: 0px;
+			margin-left: 0px;
+			font-size: 2vh;
+		}
+
+	}
+}
+
+@media only screen and (max-width: $cut-off) and (orientation:landscape) {
+	.grid{
+		//min-height: 400px;
+	}
+	#box{
+		width: 35%;
+	}
+	.social-media{
+	}
+}
+
+/*Mobile devices*/
+@media only screen and (max-width: 600px) {
+	.grid{
+		padding-bottom: 35px;
+	}
+
+	.social-media {
+		//clear: both;
+		width: 90%;
+	}
+	//center social media links center
+	.nav {
+		display: none;
+	}
+	.index-main{
+		//background-color: orange;
+		height: 65%;
+	}
+	.row{
+		height: 35%;
+		//background-color: green;
+	}
+	#brand{
+		height: 60%;
+	}
+	#profile{
+		display: block;
+		//display: none;
+		height: 80%;
+		width: 100%;
+	}
+
+	#soc1{
+		//background-color: orange;
+		max-width: 25em;
+
+		display: flex;
+		height: 40%;
+		//border: 1px solid orange;
+	}
+	#soc2 {
+		display: none;
+		align-items: flex-start;
+		margin: auto;
+		width: 80%;
+		height: 10%;
+		margin-top: 0px;
+	}
+	#box{
+		//background-color: yellow;
+		width: 100% !important;
+		height: 20%;
+
+	}
+
+
+
+	.iconcon {
+		width: 6vh;
+		height: 6vh;
+	}
+
+}
+
+@media only screen and (max-width: 600px) and (orientation:landscape) {
+	.social-media{
+		width: 70%;
+		max-width: 16em!important;
+	}
+	#box{
+		width: 60%;
+		.btn{
+			font-size: 3vh;
+		}
+	}
+}
+
+/*Desktop*/
+@media only screen and (min-width: $cut-off+1){
+	.art_nav{
+		h2, h3 {
+			font-family: AracneLight;
+			font-size: 40px;
+			display: none;
+		}
+		//changing color of overlay
+			&:hover, &:active{
+				h2, h3 {
+					display: block;
+				}
+		 	 	.overlay{
+					//filter: brightness(125%);
+		 			opacity: 0.65;
+					transition: opacity .25s;
+				}
+		 	}
+	}
+}

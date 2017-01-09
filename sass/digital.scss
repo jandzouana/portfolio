@@ -1,0 +1,106 @@
+/*Stylesheet for digital art page*/
+@import "fonts";
+@import "colors";
+@import "variable";
+
+
+#j1 {
+	background-image: url(../pictures/digital/1med.jpg);
+}
+#j2 {
+	background-image: url(../pictures/digital/2med.jpg);
+}
+#j3{
+	background-image: url(../pictures/digital/3med.jpg);
+}
+#j4 {
+	background-image: url(../pictures/digital/4med.jpg);
+}
+#j5{
+	background-image: url(../pictures/digital/5med.jpg);
+}
+#j6 {
+	background-image: url(../pictures/digital/6med.jpg);
+}
+#j7 {
+	background-image: url(../pictures/digital/7med.jpg);
+}
+#j8 {
+	background-image: url(../pictures/digital/8med.jpg);
+}
+#j9 {
+	background-image: url(../pictures/digital/9med.jpg);
+}
+#j10 {
+	background-image: url(../pictures/digital/10med.jpg);
+}
+#j11 {
+	background-image: url(../pictures/digital/11med.jpg);
+}
+#j12 {
+	background-image: url(../pictures/digitals/12med.jpg);
+}
+
+
+@media only screen and (max-width:$cut-off) and (orientation: landscape){
+#main-char{
+	padding-bottom: .6*$char-main-marg-bot;
+	padding-top: 10px;
+}
+
+.single-dot{
+	width: $dot-box-size*.3;
+	height: $dot-box-size*.3;
+}
+#main-char{
+	.slideshow{
+		//border: 2px solid red;
+		height: 80%;
+		margin-top: 5vh;
+		border-bottom: 0px solid red!important;
+		.slide{
+			margin: 20px;
+		}
+
+	}
+}
+
+}
+@media only screen and (min-width:$cut-off+1){
+#ji1 {
+	background-image: url(../pictures/digital/1.jpg);
+}
+#j2 {
+	background-image: url(../pictures/digital/2.jpg);
+}
+#j3{
+	background-image: url(../pictures/digital/3.jpg);
+}
+#j4 {
+	background-image: url(../pictures/digital/4.jpg);
+}
+#j5 {
+	background-image: url(../pictures/digital/5.jpg);
+}
+#j6 {
+	background-image: url(../pictures/digital/6.jpg);
+}
+#j7 {
+	background-image: url(../pictures/digital/7.jpg);
+}
+#j8 {
+	background-image: url(../pictures/digital/8.jpg);
+}
+#j9 {
+	background-image: url(../pictures/digital/9.jpg);
+}
+#j10 {
+	background-image: url(../pictures/digital/10.jpg);
+}
+#j11 {
+	background-image: url(../pictures/digital/11.jpg);
+}
+#j12 {
+	background-image: url(../pictures/digital/12.jpg);
+}
+}

@@ -1,0 +1,187 @@
+/*Stylesheet for animation page*/
+@import "fonts";
+@import "colors";
+@import "variable";
+
+
+*{
+}
+#main-anim{
+	height: 100%;
+}
+
+.gallery{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding-top: 40px;
+	.videos{
+		padding: 20px;
+		border-top: 1px solid $slide-color;
+		margin-right: 30px;
+		margin-left:30px;
+		height: 68%;
+		.vid{
+			display: none;
+			height: 100%;
+			width: 100%;
+		}
+		.active-vid{
+			display: block;
+		}
+	}
+	.active-vid{
+		display: block;
+	}
+	.anim-title{
+		//border: 1px solid green;
+		height: 4%;
+		margin-left: 30px;
+		margin-bottom: 5px;
+		p{
+			font-size: $page-header;
+			font-family: AracneRegular;
+		}
+	}
+
+	.vid-list{
+		//border: 1px solid red;
+		position: relative;
+		margin-left: 30px;
+		margin-right: 30px;
+		padding-top: 20px;
+		height: 28%;
+		border-top: 1px solid $slide-color;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		cursor: pointer;
+		li {
+			display: flex;
+			flex-direction: column;
+			p{
+				margin-top: 10px;
+				font-family: AracneRegular;
+				font-size: 130%;
+				&:hover{
+					color: orange;
+					transition: color 0.2s;
+
+				}
+			}
+
+		}
+		.thumb{
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.overlay{
+			position: absolute;
+			background-color: orange;
+			opacity: 0;
+			&:hover{
+				opacity: 0.3;
+				transition: opacity 0.2s;
+			}
+		}
+		div{
+			width: 150px;
+			height: 100px;
+		}
+		.active-li {
+				p{
+				color: $focus;
+				&:hover{
+					color: orange;
+					transition: color 0.2s;
+				}
+			}
+		}
+	}
+}
+
+#ii1 {
+	background-image: url(../pictures/video_icons/monster.jpg);
+}
+
+#ii2 {
+	background-image: url(../pictures/video_icons/wilf.jpg);
+}
+#ii3{
+	background-image: url(../pictures/video_icons/bo.jpg);
+}
+
+@media only screen and (max-width:$cut-off){
+	.container{
+		width: 100vw;
+		height: auto;
+		flex-direction: column;
+	}
+	#main-anim{
+		width: 100%;
+		height: auto;
+
+	}
+
+	.gallery{
+		width: 100%;
+		.videos{
+			border-top: 0px solid $slide-color;
+			height: 58vh;
+			padding: 0px;
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+		.anim-title{
+			height: 50px;
+			margin-top: 50px;
+		}
+		.vid-list{
+			margin-left: 10px;
+			margin-right: 10px;
+			flex-flow: column nowrap;
+			//border: 1px solid purple;
+			margin-bottom: 50px;
+			height: auto;
+			li{
+				margin-bottom: 20px;
+				p{
+					//font-size: 4vh;
+				}
+			}
+			div{
+				width: 100%;
+				height: 200px;
+			}
+		}
+	}
+
+
+
+}
+
+@media only screen and (max-width:$cut-off) and (orientation: landscape) and (max-height: $max-land-height){
+	.container{
+		height:auto;
+		max-height: auto;
+		min-height: auto;
+	}
+	#main-anim{
+		height: 100%;
+	}
+	.gallery{
+		margin-top: 25px;
+		height: auto;
+		//border: 1px solid orange;
+		.videos{
+			height: 80vh;
+		}
+		.vid-list{
+			height: auto;
+			div{
+				height: 25vh;
+			}
+		}
+	}
+}

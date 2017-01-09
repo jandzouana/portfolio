@@ -1,0 +1,13 @@
+//$sub-head-color: darken(#669999, 10%);
+$sub-head-color: lighten(#3d4853, 15%);
+$overlay: #00284d;
+$focus: #0074D9;
+$menu: lighten(desaturate(#203449, 8%), 2%);
+$menu-nav: desaturate(lighten($menu, 5%), 2%);
+$menu-sub: darken($menu, 8%);
+$menu-mob: darken($menu-nav, 5%);
+$hover-menu: darken(#ffbf5e, 6%);
+$slide-color: #d3d3d3;
+//$btn-color: darken(grey, 20%);
+$btn-color: $menu;
+$about-header: lighten(#273f66, 10%);

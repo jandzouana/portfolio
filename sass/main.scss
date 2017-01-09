@@ -1,0 +1,519 @@
+/*This stylesheet is for the overall look of the main part of the website*/
+
+@import "compass/reset";
+@import "../externals/btns/btns.scss";
+@import "fonts";
+@import "colors";
+@import "variable";
+@import "responsive";
+@import "compass/css3";
+@import "../externals/sass-burger-master/burger";
+//Other page styles
+@import "characters";
+@import "animation";
+@import "reel";
+@import "digital";
+@import "about";
+
+@mixin box-shadow2($top, $left, $blur, $color, $inset:"") {
+
+      -webkit-box-shadow:$top $left $blur $color #{$inset};
+      -moz-box-shadow:$top $left $blur $color #{$inset};
+      box-shadow:$top $left $blur $color #{$inset};
+}
+* {
+	//border: 1px solid red !important;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	padding-top: $page_padding_top;
+}
+
+/*Additional classes*/
+.hide {
+    display:none!important;
+}
+
+.show {
+    display:block!important;
+}
+
+/*Copyright note*/
+#copy{
+	h3{
+		color: white;
+		opacity: .4;
+		font-size: 15px;
+		text-align: center;
+	}
+	margin: auto;
+}
+
+/*container for navigation and main content*/
+.container{
+	//border: 3px solid blue;
+	margin: auto;
+	margin-top: 0px;
+	margin-bottom: 40px;
+	padding-right: 20px;
+	padding-left: 20px;
+	display: flex;
+	justify-content: center;
+	flex-flow: row nowrap;
+	height: 90vh;
+	max-height: 90vh;
+	min-height: $page-height;
+	max-width: $page-width;
+	max-height: 1100px;
+	width: 100%;
+}
+
+/*Navigation bar that shows up in mobile version*/
+.mob-nav-bar{
+	display: none;
+	height: $nav-height;
+	width: 100%;
+	background-color: $menu-nav;
+	position: fixed;
+	z-index: 4;
+	@include box-shadow2(0, 1px, 3px, darken(#203449, 6%))
+	//box-shadow: 0px 2px 3px darken(#203449, 15%);
+}
+
+.nav-logo{
+	//border: 1px solid orange;
+	float: right;
+
+	height: 55px;
+	width: auto;
+	padding: 5px;
+	-webkit-filter: invert(100%); filter: invert(100%);
+}
+
+/*Navigation + logo + footer*/
+.menu{
+	//border: 1px solid orange;
+	z-index: 2;
+
+	background-color: $menu;
+	max-width: $menu-width;
+	//max-height: 2000px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	padding{
+		top: 0px;
+		bottom: 0px;
+	}
+}
+
+.menu-button {
+	display: inline-block;
+	padding: .5em;
+	//background-color: darken($menu, 2%);
+	background-color: $menu-nav;
+
+	/*
+	&:hover{
+		background-color: $menu;
+		transition: background-color .2s;
+	}
+	*/
+}
+
+
+.burger-icon {
+	@include burger($burger-height, $burger-gutter, 5px, white);
+}
+
+.menu-button.is-active .burger-icon {
+	@include burger-to-cross;
+}
+
+
+
+#brand{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+	margin-top: 40px;
+	width: 100%;
+	margin-bottom: 45px;
+}
+#logo{
+	img{
+		width: $logo-size*1.2;
+		height: $logo-size*1.2;
+		-webkit-filter: invert(100%); filter: invert(100%);
+	}
+}
+#logo-text{
+	color: white;
+	h2{
+		font-size: 30px;
+		text-align: center;
+		//display: none;
+	}
+	h3{
+		font-size: 15px;
+		text-align: center;
+			margin: {
+				left: auto;
+				right: auto;
+				top: 5px;
+			};
+	}
+	display: none;
+	flex-flow: column nowrap;
+	//justify-content: center;
+	align-items: flex-start;
+	text-align: center;
+	border-left: hidden;
+	//border-top: 2px solid lighten($menu, 40%);
+
+	margin-top: 15px;
+	padding-top: 15px;
+	padding-left: 0;
+	margin-left: 0;
+	height: 120px;
+	width: 85%;
+}
+/*Navigation links*/
+.main-nav{
+
+	width: 100%;
+	height: 100%;
+	a{
+		text-decoration: none;
+		cursor: pointer;
+		display: block;
+		padding: 8px 0 15px 0;
+		text-align: center;
+		color: white;
+		text-transform: uppercase;
+		display: block;
+		font-size: $menu-font-size;
+		letter-spacing: .175em;
+		&:hover{
+			color: $hover-menu;
+			transition: color 0.2s;
+		}
+	}
+}
+
+
+.main-nav-ul {
+	//border: 1px solid red;
+/*Sub menus*/
+	ul{
+		//border: 1px solid blue;
+		display: none;
+		flex-direction: column;
+		justify-content: space-around;
+		background-color: $menu-sub;
+	}
+	li {
+		//border: 1px solid green;
+		height: 50px;
+		a{
+			//border: 1px solid orange;
+		}
+	}
+}
+
+/*Shows sub menu when sub menu headings are clicked*/
+.main-nav-ul li.tap ul{
+	display: block;
+}
+
+/*arrow that shows up next to sub menus*/
+.sub-arrow{
+	display: inline-block;
+	&:after{
+		position: relative;
+		top: 1px;
+		color: lighten(grey, 20%);
+		display: inline-block;
+		content: "\2039";
+		font-size: 24px;
+		text-align: center;
+		margin-left: 4px;
+	}
+	&:hover{
+		color: $hover-menu;
+	}
+}
+
+/*Footer*/
+.footer{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	width: 100%;
+	height: 100px;
+	//border: 1px solid green;
+	position: absolute;
+	bottom: $footer-dist-bot;
+}
+/*social media*/
+.social-media{
+	//border: 1px solid red;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+	width: 85%;
+	//height: 100%;
+	a{
+		text-decoration: none;
+	}
+	bottom: $footer-dist-bot + 30;
+	margin: auto;
+}
+
+.iconcon{
+	//border: 1px solid yellow;
+	padding: 3px;
+	width: $icon-size*.8;
+	height: $icon-size*.8;
+	//margin-left: 25px;
+
+}
+.icon {
+	opacity: .35;
+	height: 100%;
+	width: 100%;
+	padding: auto;
+	&:hover{
+		opacity: .75;
+		transition: opacity .2s;
+	}
+}
+
+/*Main content container*/
+main{
+	//border: 2px solid purple;
+	width: $page-width - $menu-width;
+	height: 100%;
+
+}
+
+#main-home{
+	img{
+		width: 100%;
+	}
+}
+
+.bot-nav{
+	background-color: $menu-mob;
+	height: auto;
+
+}
+.bot-nav-ul{
+	display: flex;
+	min-height: 100vh;
+	height: 100vh;
+	width: 0vw;
+
+	display: none;
+	//border: 2px solid green;
+	position: relative;
+	padding-top: $nav-height+5;
+	flex-flow: column wrap;
+	justify-content: space-between;
+
+	li{
+		//border: 1px solid red;
+		padding: 2vh;
+		padding-left: 3vh;
+		padding-bottom: 2vh;
+		a{
+			//border: 1px solid red;
+			color: white;
+			opacity: 0.6;
+			text-decoration: none;
+			font-size: 3.75vh;
+			font-family: AracneRegular;
+			&:hover{
+				color: $hover-menu;
+			}
+		}
+	}
+}
+
+#soc3{
+	display: none;
+	position: absolute;
+	bottom: 3vh;
+	left: 3vh;
+	width: 70%;
+	.iconcon{
+		padding: 3px;
+		width: $icon-size*1;
+		height: $icon-size*1;
+		//margin-left: 25px;
+
+	}
+}
+@media only screen and (max-width:$cut-off){
+	.container{
+		height:100vh;
+		max-height: 100vh;
+		min-height: 100vh;
+	}
+	.mob-nav-bar{
+		display: block;
+		position: fixed;
+	}
+	.container{
+		flex-direction: column;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		justify-content: flex-start;
+		padding: 0;
+	}
+	.menu{
+		background-color: $menu-mob;
+		position: fixed;
+		top: $nav-height;
+		display: none;
+		max-width: 100%;
+		height: auto;
+		padding: {
+			top: 15px;
+			bottom: 15px;
+		}
+		align-items: center;
+	}
+
+
+	#brand, #copy{
+		display: none;
+	}
+	.iconcon{
+		padding: 3px;
+		width: $icon-size*.7;
+		height: $icon-size*.7;
+
+	}
+
+	.social-media{
+		width: 80%;
+	}
+
+	.footer{
+		position: static;
+		height: 60px;
+	}
+	main{
+		width: 100%;
+		height: 100%;
+		margin-top: $nav-height;
+	}
+	body{
+		padding-top: 0;
+	}
+
+	.main-nav-ul{
+		display: flex;
+		flex-direction: column;
+		ul{
+			z-index: 2;
+		}
+		li {
+			height: 45px;
+			z-index: 2;
+		}
+	}
+}
+
+@media only screen and (max-width:$cut-off) and (orientation: landscape) and (max-height: $max-land-height){
+	.container {
+		flex-direction: row;
+		//border: 1px solid purple;
+		width: 100vw;
+	}
+	.menu{
+		display: none !important;
+	}
+	 main{
+		 //border: 1px solid red;
+		 height: 90%;
+		 //width: 60vw;
+		 width: 100vw!important;
+		margin-top: 5%;
+	}
+	.bot-nav-ul{
+		display: flex;
+		width: 0vw;
+		li{
+			display: none;
+		}
+	}
+
+
+}
+
+@media only screen and (min-width: $cut-off+1) {
+	.menu{
+		display:block!important;
+	}
+}
+
+
+/*Desktop media queries*/
+@media only screen and (max-height: 900px) and (min-width: $cut-off+1){
+	#brand{
+		justify-content: flex-start;
+		margin-top: 35px;
+		margin-bottom: 40px;
+		transition: margin .2s;
+	}
+	#logo{
+		img{
+			width: $logo-size;
+			height: $logo-size;
+			transition: width .2s;
+			transition: height .2s;
+		}
+	}
+	.main-nav-ul {
+
+		li {
+			//border: 1px solid green;
+			height: 50px;
+			transition: height .2s;
+			a{
+				//border: 1px solid orange;
+			}
+		}
+	}
+}
+
+@media only screen and (max-height: 760px) and (min-width: $cut-off+1){
+	#brand{
+		justify-content: flex-start;
+		margin-top: 35px;
+		margin-bottom: 30px;
+		transition: margin .2s;
+	}
+	.main-nav-ul {
+
+		li {
+			//border: 1px solid green;
+			height: 40px;
+			transition: height .2s;
+			a{
+				//border: 1px solid orange;
+			}
+		}
+	}
+}

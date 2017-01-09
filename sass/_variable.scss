@@ -1,0 +1,34 @@
+/*Variables*/
+$icon-size: 45px;
+$sm-m-height:70px;
+$btn-size: 60%;
+$page-header: 26px;
+
+$grid-size: 1100px;
+$page-width: 1500px;
+$page-height: 600px;
+$page_padding_top: 30px;
+$max-land-height: 600px;
+//height of header in mobile
+$brand-m-height:140px;
+$logo-size:100px;
+//logo font size
+$logo-f-size: 50px;
+
+/*Menu*/
+$num-items: 8;
+$menu-font-size: 17px;
+$footer-dist-bot: 15px;
+$menu-width: 250px;
+
+/*Nav bar*/
+$burger-height: 22px;
+$burger-gutter: 3px;
+$nav-height: 2*$burger-height + 5*$burger-gutter;
+
+//Media queries max size
+$cut-off: 900px;
+
+//slideshow
+$dot-box-size: 8vh;
+$char-main-marg-bot: 15vh;

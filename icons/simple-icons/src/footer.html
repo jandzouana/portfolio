@@ -1,0 +1,54 @@
+
+        </ul>
+    </main>
+    <script>
+        var searchField = document.getElementById("search");
+        searchField.addEventListener('input', function (evt) {
+            search();
+        });
+
+        hashSearch();
+        window.addEventListener('hashchange', function (evt) {
+            hashSearch();
+        });
+
+        function hashSearch() {
+            var query = window.location.hash.substring(1);
+            document.getElementById("search").value = query;
+            search();
+        }
+
+        function search() {
+            var searchTerm = searchField.value.toLowerCase();
+            var icons = document.getElementsByClassName("tiles__item");
+            for (var i = 0; i < icons.length; i++) {
+                icons[i].style.display = "inline-block";
+                var index = icons[i].dataset.search.indexOf(searchTerm);
+                if (index == -1) {
+                    icons[i].style.display = "none";
+                }
+            }
+        }
+
+        function toggleNames() {
+            var list = document.getElementsByClassName("tiles tiles--icons");
+            if(list.length == 1) {
+                list[0].className = "tiles tiles--full";
+                document.getElementById("toggle-button").innerHTML = "Hide names & colour values";
+            } else {
+                var list = document.getElementsByClassName("tiles tiles--full");
+                list[0].className = "tiles tiles--icons";
+                document.getElementById("toggle-button").innerHTML = "Show names & colour values";
+            }
+        }
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-46210978-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

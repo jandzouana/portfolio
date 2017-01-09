@@ -1,0 +1,16 @@
+@import "../burger";
+
+.menu-button {
+	display: inline-block;
+	padding: .5em;
+	background-color: black;
+	//border: 1px solid #ccc;
+}
+
+.burger-icon {
+	@include burger(22px, 3px, 5px, white);
+}
+
+.menu-button.is-active .burger-icon {
+	@include burger-to-cross;
+}

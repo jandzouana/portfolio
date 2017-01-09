@@ -1,0 +1,240 @@
+/*Stylesheet for character page*/
+@import "fonts";
+@import "colors";
+@import "variable";
+
+*{
+	//border: 1px solid red!important;
+}
+
+#main-char{
+	position: relative;
+	//border: 2px solid blue;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-flow: column nowrap;
+	padding: 20px;
+	padding-top: 40px;
+	.slideshow{
+		.active{
+			display: block;
+		}
+		height: 100%;
+		width: 100%;
+		border-top: 1px solid $slide-color;
+	  border-bottom: 1px solid $slide-color;
+		img{
+			display: none;
+		}
+	}
+}
+
+.slideshow{
+	position: relative;
+	//border: 2px solid purple;
+
+	.slide{
+		//border: 2px solid purple;
+		margin: 30px;
+		display: none;
+		position: absolute;
+    top: 0;
+		bottom: 0;
+    left: 0;
+    right: 0;
+		background-position: center;
+		/*
+		left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+		*/
+    background-repeat: no-repeat;
+    background-size: contain; //!important?
+
+	}
+
+}
+.dots{
+	height: $dot-box-size;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	ul{
+		display: flex;
+		align-items: center;
+		height: 100%;
+		width: auto;
+		//border: 1px solid red;
+	}
+}
+
+.single-dot{
+	cursor: pointer;
+	margin: 8px;
+	background-color: grey;
+	border-radius: 50%;
+	width: $dot-box-size*.15;
+	height: $dot-box-size*.15;
+}
+
+.active-dot{
+	background-color: orange;
+}
+
+#left_arrow, #right_arrow{
+	z-index: 1;
+	width: 50px;
+	height: 75px;
+	transform: translate(0,-50%);
+	top: 50%;
+	position: absolute;
+	cursor: pointer;
+	opacity: 0.45;
+	img{
+		width: 100%;
+		height: 100%;
+	}
+	&:hover{
+		transition: opacity 0.2s;
+		opacity: 0.7;
+	}
+
+}
+
+#left_arrow{
+	left: 10px;
+
+}
+#right_arrow{
+	right: 10px;
+}
+
+
+@media only screen and (max-width:$cut-off){
+	#left_arrow, #right_arrow{
+		top: 55vh - $char-main-marg-bot;
+	}
+	#left_arrow{
+		left: 5px;
+
+	}
+	#right_arrow{
+		right: 5px;
+	}
+	.single-dot{
+		width: $dot-box-size*.2;
+		height: $dot-box-size*.2;
+	}
+	#main-char{
+		.slideshow{
+			//border: 2px solid yellow;
+			width: 100%;
+			height: 90%;
+			border-top: 0px solid red!important;
+		}
+		.dots{
+			height: 10%;
+		}
+		padding-bottom: $char-main-marg-bot;
+	}
+	#i1 {
+		background-image: url(../pictures/characters/1med.jpg);
+	}
+	#i2 {
+		background-image: url(../pictures/characters/2med.jpg);
+	}
+	#i3{
+		background-image: url(../pictures/characters/3med.jpg);
+	}
+	#i4 {
+		background-image: url(../pictures/characters/4med.jpg);
+	}
+	#i5{
+		background-image: url(../pictures/characters/5med.jpg);
+	}
+	#i6 {
+		background-image: url(../pictures/characters/6med.jpg);
+	}
+	#i7 {
+		background-image: url(../pictures/characters/7med.jpg);
+	}
+	#i8 {
+		background-image: url(../pictures/characters/8med.jpg);
+	}
+	#i9 {
+		background-image: url(../pictures/characters/9med.jpg);
+	}
+	#i10 {
+		background-image: url(../pictures/characters/10med.jpg);
+	}
+	#i11 {
+		background-image: url(../pictures/characters/11med.jpg);
+	}
+	#i12 {
+		background-image: url(../pictures/characters/12med.jpg);
+	}
+}
+
+@media only screen and (max-width: $cut-off) and (orientation: landscape) and (max-height: $max-land-height){
+	#main-char{
+		padding-bottom: .6*$char-main-marg-bot;
+		padding-top: 10px;
+	}
+
+	.single-dot{
+		width: $dot-box-size*.3;
+		height: $dot-box-size*.3;
+	}
+	#main-char{
+		.slideshow{
+			//border: 2px solid red;
+			height: 80%;
+			margin-top: 5vh;
+			border-bottom: 0px solid red!important;
+			.slide{
+				margin: 20px;
+			}
+
+		}
+	}
+
+}
+@media only screen and (min-width:$cut-off+1){
+	#i1 {
+		background-image: url(../pictures/characters/1.jpg);
+	}
+	#i2 {
+		background-image: url(../pictures/characters/2.jpg);
+	}
+	#i3{
+		background-image: url(../pictures/characters/3.jpg);
+	}
+	#i4 {
+		background-image: url(../pictures/characters/4.jpg);
+	}
+	#i5 {
+		background-image: url(../pictures/characters/5.jpg);
+	}
+	#i6 {
+		background-image: url(../pictures/characters/6.jpg);
+	}
+	#i7 {
+		background-image: url(../pictures/characters/7.jpg);
+	}
+	#i8 {
+		background-image: url(../pictures/characters/8.jpg);
+	}
+	#i9 {
+		background-image: url(../pictures/characters/9.jpg);
+	}
+	#i10 {
+		background-image: url(../pictures/characters/10.jpg);
+	}
+	#i11 {
+		background-image: url(../pictures/characters/11.jpg);
+	}
+	#i12 {
+		background-image: url(../pictures/characters/12.jpg);
+	}
+}

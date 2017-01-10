@@ -18,7 +18,7 @@ session_start();
     <![endif]-->
 
   </head>
-  <body>
+  <body class="aboutbody">
 		<div class="container" id="container-a">
 			<nav class="mob-nav-bar">
 				<img class = "nav-logo" src="../pictures/brand/logovec4.png" alt="logo">

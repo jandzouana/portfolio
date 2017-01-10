@@ -4,19 +4,8 @@
 5.clean up Code
 6. add compass stuff
 7. animation page?
-8. add anti spam
 9.update resume
-10. turn back uac
-11. change from digital to regular illustrations
-12. add sketch section
-13. fix mobile about me
-14. write about me
-15. hide submit button
-16. setup host website
-17. change links to ABOUTME
-18. change url link to other
+10. turn back uac (control panel)
+
 Today:
-1. anti-spam
-2. fix mobile about me
-3. host?
-4. make sure concatenation works
+url bar

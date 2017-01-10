@@ -45,8 +45,6 @@
 
 @media only screen and (max-width:$cut-off) and (orientation: portrait){
 	#main-charsects{
-		min-height: 400px;
-		max-height: 800px;
 		height: 100vh;
 		justify-content: center;
 		margin: auto;
@@ -59,7 +57,10 @@
 		align-content: center;
 		.sect{
 			width: 100%;
-			height: 100%;
+			height: 40%;
+			h2{
+				font-size: 10vh;
+			}
 		}
 	}
 }

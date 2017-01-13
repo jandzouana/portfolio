@@ -114,7 +114,7 @@ When I started attending university, I wanted to extend my knowledge beyond the 
 					</div>
 
 					<section class="contact">
-						<h2> Contact me </h2>
+						<h2 class="contact-header"> Contact me </h2>
 						<form method="post" action="">
 							<div class="top">
 						    <div class="left">
@@ -123,8 +123,10 @@ When I started attending university, I wanted to extend my knowledge beyond the 
 							    <label>Email</label>
 							    <input name="email" type="email">
 									<label>Enter Image Text</label>
-									<img src="captcha.php" class="captcha"/><br>
-									<input name="captcha" type="text">
+									<div class="captcha-group">
+										<img src="captcha.php" class="captcha"/><br>
+										<input name="captcha" type="text">
+									</div>
 								</div>
 								<div class="right">
 						    	<label>Message</label>
@@ -160,9 +162,7 @@ When I started attending university, I wanted to extend my knowledge beyond the 
 						}
 						?>
 					</section>
-
 				</div>
-
 			</main>
 		</div>
 	</body>

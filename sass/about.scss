@@ -12,7 +12,6 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	padding-top: 30px;
-	padding-bottom: 30px;
 	//border: 2px solid teal;
 	.small h2 {
 		font-size: 4vh !important;
@@ -107,21 +106,26 @@
 }
 
 .contact {
-  //border: 1px solid green;
+  //border: 3px solid green;
 	width: 100%;
-	height: 50%;
+	height: 300px;
 	display: flex;
 	flex-flow: column nowrap;
-	justify-content: space-around;
+	justify-content: flex-start;
 
 	form{
-		height: 90%;
+		height: 250px;
 		//border: 1px solid blue;
 		font-family: AracneRegular;
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: space-between;
 
+	}
+	.contact-header{
+		height: 25px;
+		margin-bottom: 10px;
+		//border: 1px solid red;
 	}
 	label{
 		color: darken(grey, 20%);
@@ -139,22 +143,19 @@
 		border-radius:0;
 	}
 
-	input, label {
+	input, label, .captcha-group {
 		height: 30px;
 		//border: 1px solid blue;
 	}
 
-	.captcha{
-		width: 60px;
-		padding-top: 6px;
-	}
+
 	#submit{
-		//border: 2px solid green;
+		//border: 2px solid blue;
 		font-family: AracneRegular;
 		cursor: pointer;
-		height: 20%;
-		margin-top: 20px;
-		font-size: 20px;
+		height: 60px;
+		margin-top: 10px;
+		font-size: 18px;
 		color: darken(grey, 20%);
 		&:hover{
 			color: white;
@@ -164,16 +165,35 @@
 		-webkit-appearance: none;
 	}
 	.submitmsg{
+		height: 25px;
 		font-size: 18px;
 		color: black;
 		//border: 1px solid red;
-		margin-bottom: 30px;
 	}
-	.top{
-		//border: 1px solid green;
+	.captcha-group{
+		//border: 1px solid red;
 		display: flex;
 		flex-flow: row nowrap;
-		height: 80%;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 5px;
+		input {
+			width: 100%;
+			height: 100%;
+			margin-left: 5px;
+		}
+		.captcha{
+			//border: 1px solid red;
+			width: 80px;
+			height: 150%;
+		}
+
+	}
+	.top{
+		//border: 1px dashed green;
+		display: flex;
+		flex-flow: row nowrap;
+		height: 190px;
 		justify-content: space-between;
 	}
 	.left, .right{
@@ -249,7 +269,7 @@
 
 @media only screen and (max-width:$cut-off){
 	html, body{
-		height: 150%;
+		height: 175%;
 		min-height: 100%;
 	}
 
@@ -267,6 +287,12 @@
 		padding: 0px 20px 0px 20px;
 		height: 700px;
 		//border: 1px solid red;
+		.captcha-group{
+			margin-bottom:10px;
+			.captcha{
+				width: 100px;
+			}
+		}
 		.top{
 			height: 80%;
 			//border: 1px solid blue;
@@ -277,14 +303,20 @@
 			width: 100%;
 			height: 50%;
 		}
+		form{
+			height: 80%;
+		}
 		#submit{
 			height: 15%;
-			font-size: 3.5vh;
+			font-size: 25px;
 			//border: 1px solid green;
 		}
 		input, label{
-			font-size: 3vh;
+			font-size: 20px;
 			height: 14%;
+		}
+		.submitmsg{
+			font-size: 20px;
 		}
 	}
 	.link-box{
@@ -307,7 +339,7 @@
 		margin: 0px;
 		padding: 0px 10px 30px 10px;
 		h2{
-			font-size: 5vh;
+			font-size: 30px;
 			text-align: center;
 		}
 	}
@@ -351,6 +383,13 @@
 }
 
 @media only screen and (max-width:$cut-off) and (orientation:landscape) and (max-height: $max-land-height){
+	.about-container{
+		margin-top: 80px;
+	}
+	html, body{
+		height: 200%;
+		min-height: 100%;
+	}
 	#main-about{
 		padding-top: 0px;
 		h2{
@@ -378,12 +417,12 @@
 			height: 80%;
 		}
 		#submit{
-			height: 20%;
+			height: 80px;
 		}
 	}
 	.link-box{
 		a{
-			font-size: 7vh;
+			font-size: 5vh;
 		}
 	}
 
@@ -399,9 +438,6 @@
 
 @media only screen and (max-width:$cut-off) and (orientation:landscape) and (max-height: $max-land-height - 200){
 		.text{
-			h2{
-				//font-size: 8.6vh;
-			}
 			h3{
 				font-size: 5vh;
 			}
@@ -412,6 +448,9 @@
 			}
 			#submit{
 				height: 10%;
+			}
+			label, #submit{
+				font-size: 6vh;
 			}
 		}
 	}

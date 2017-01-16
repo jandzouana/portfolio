@@ -66,7 +66,7 @@ session_start();
 							<img class="icon" src="../icons/wpw.svg" alt="wordpress">
 						</a>
 					</div>
-					<div id="copy"><h3>Copyright © 2016 Jessica Andzouana</h3></div>
+					<div id="copy"><h3>Copyright © 2017 Jessica Andzouana</h3></div>
 				</div>
 			</div>
 			<nav class="bot-nav">
@@ -93,7 +93,7 @@ session_start();
 								<img class="icon" src="../icons/wpw.svg" alt="wordpress">
 							</a>
 						</div>
-						<div id="copy"><h3>Copyright © 2016 Jessica Andzouana</h3></div>
+						<div id="copy"><h3>Copyright © 2017 Jessica Andzouana</h3></div>
 					</li>
 				</ul>
 			</nav>

@@ -1,14 +1,17 @@
 /*This stylesheet is for the overall look of the main part of the website*/
 
+/*Compass*/
 @import "compass/reset";
+@import "compass/css3";
+
+/*Helper style pages*/
 @import "../externals/btns/btns.scss";
 @import "fonts";
 @import "colors";
 @import "variable";
 @import "responsive";
-@import "compass/css3";
 @import "../externals/sass-burger-master/burger";
-//Other page styles
+/*My page styles*/
 @import "characters";
 @import "animation";
 @import "reel";
@@ -23,7 +26,6 @@
       box-shadow:$top $left $blur $color #{$inset};
 }
 * {
-	//border: 1px solid red !important;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -56,15 +58,15 @@ body{
 
 /*container for navigation and main content*/
 .container{
-	//border: 3px solid blue;
-	margin: auto;
 	margin-top: 0px;
 	margin-bottom: 40px;
 	padding-right: 20px;
 	padding-left: 20px;
+
 	display: flex;
 	justify-content: center;
 	flex-flow: row nowrap;
+
 	height: 90vh;
 	max-height: 90vh;
 	min-height: $page-height;
@@ -82,13 +84,10 @@ body{
 	position: fixed;
 	z-index: 4;
 	@include box-shadow2(0, 1px, 3px, darken(#203449, 6%))
-	//box-shadow: 0px 2px 3px darken(#203449, 15%);
 }
 
 .nav-logo{
-	//border: 1px solid orange;
 	float: right;
-
 	height: 55px;
 	width: auto;
 	padding: 5px;
@@ -97,12 +96,9 @@ body{
 
 /*Navigation + logo + footer*/
 .menu{
-	//border: 1px solid orange;
-	z-index: 2;
-
+	z-index: 2; //overlay on page
 	background-color: $menu;
 	max-width: $menu-width;
-	//max-height: 2000px;
 	width: 100%;
 	height: 100%;
 	position: relative;
@@ -118,15 +114,7 @@ body{
 .menu-button {
 	display: inline-block;
 	padding: .5em;
-	//background-color: darken($menu, 2%);
 	background-color: $menu-nav;
-
-	/*
-	&:hover{
-		background-color: $menu;
-		transition: background-color .2s;
-	}
-	*/
 }
 
 
@@ -497,14 +485,9 @@ main{
 		}
 	}
 	.main-nav-ul {
-
 		li {
-			//border: 1px solid green;
 			height: 50px;
 			transition: height .2s;
-			a{
-				//border: 1px solid orange;
-			}
 		}
 	}
 }
@@ -517,14 +500,9 @@ main{
 		transition: margin .2s;
 	}
 	.main-nav-ul {
-
 		li {
-			//border: 1px solid green;
 			height: 40px;
 			transition: height .2s;
-			a{
-				//border: 1px solid orange;
-			}
 		}
 	}
 }

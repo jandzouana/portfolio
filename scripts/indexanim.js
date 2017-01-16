@@ -129,14 +129,13 @@ $(document).ready(function(){
 	$("#menuButton").click(function(){
 			$(this).toggleClass('is-active');
 			//$('.text').toggleClass("small");
-
 			if (menuDown == false){
 				$('.menu').fadeIn("fast");
 				$('.bot-nav-ul').css("width", "30vw");
 				$('.bot-nav-ul li').css("display", "block");
-				$("main land").css("width", "auto");
-				//text sizes about me
+				//$("main land").css("width", "auto");
 
+				$('.contact').css("padding", "0px 10px 0px 10px");
 
 				menuDown = true;
 			}

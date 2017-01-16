@@ -6,6 +6,9 @@
 7. animation page?
 9.update resume
 10. turn back uac (control panel)
+11. remove margins about me landscape menu pull up
 
 Today:
 url bar
+fix section 1 and 2
+fix about me page ipad

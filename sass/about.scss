@@ -42,7 +42,7 @@
 	}
 	h3{
 		line-height:1.2;
-		//border: 1px solid blue;
+		//border: 1px solid green;
 		text-align: center;
 		letter-spacing: 1px;
 		font-size: 15px;
@@ -226,45 +226,27 @@
 		}
 
 	}
-	.box1{
-		height: 45%;
-	}
-	.link-box{
-		height: 5%;
-		a{
-			font-size: 15px;
-		}
-	}
+
 }
 
 @media only screen and (max-width: 985px){
 	.about-container{
-		//border: 1px solid red;
-		padding-left: 50px;
-		padding-right: 50px;
+		padding-left: 30px;
+		padding-right: 30px;
 		h2{
 			font-size:18px;
 		}
 		h3{
 			font-size: 13px;
 		}
-
-	}
-	.box1{
-		height: 50%;
-	}
-	.link-box{
-		height: 5%;
-		a{
-			font-size: 15px;
+		.link-box{
+			margin-top: 5px;
+			a{
+				font-size: 14px;
+			}
 		}
 	}
-	input, label {
-		height: 8%;
-	}
-	.contact{
-		height: 45%;
-	}
+
 }
 
 @media only screen and (max-width:$cut-off){
@@ -319,17 +301,7 @@
 			font-size: 20px;
 		}
 	}
-	.link-box{
-		justify-content: center;
-		align-content: center;
-		align-self: center;
-		height: 5%;
-		margin-bottom: 40px;
-		a{
-			font-size: 3vh;
-			text-align: center;
-		}
-	}
+
 	.about-container{
 		//border-top: 0px solid red;
 		//border: 3px solid orange;
@@ -339,8 +311,19 @@
 		margin: 0px;
 		padding: 0px 10px 30px 10px;
 		h2{
-			font-size: 30px;
+			font-size: 5vh;
 			text-align: center;
+		}
+		.link-box{
+			justify-content: center;
+			align-content: center;
+			align-self: center;
+			height: 5%;
+			margin-bottom: 40px;
+			a{
+				font-size: 25px;
+				text-align: center;
+			}
 		}
 	}
 

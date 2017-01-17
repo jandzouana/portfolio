@@ -13,11 +13,13 @@
 @import "../externals/sass-burger-master/burger";
 /*My page styles*/
 @import "characters";
+@import "sketches";
 @import "animation";
 @import "reel";
 @import "digital";
 @import "about";
 @import "sections";
+
 
 @mixin box-shadow2($top, $left, $blur, $color, $inset:"") {
 
@@ -191,9 +193,10 @@ body{
 		display: block;
 		font-size: $menu-font-size;
 		letter-spacing: .175em;
+		@include transition-property(color);
+		@include transition-duration(1s);
 		&:hover{
 			color: $hover-menu;
-			transition: color 0.2s;
 		}
 	}
 }

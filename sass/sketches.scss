@@ -1,0 +1,84 @@
+/*Stylesheet for digital art page*/
+@import "fonts";
+@import "colors";
+@import "variable";
+
+
+#l1 {
+	background-image: url(../pictures/sketches/1med.jpg);
+}
+#l2 {
+	background-image: url(../pictures/sketches/2med.jpg);
+}
+#l3{
+	background-image: url(../pictures/sketches/3med.jpg);
+}
+#l4 {
+	background-image: url(../pictures/sketches/4med.jpg);
+}
+#l5{
+	background-image: url(../pictures/sketches/5med.jpg);
+}
+#l6 {
+	background-image: url(../pictures/sketches/6med.jpg);
+}
+#l7 {
+	background-image: url(../pictures/sketches/7med.jpg);
+}
+#l8 {
+	background-image: url(../pictures/sketches/8med.jpg);
+}
+#l9 {
+	background-image: url(../pictures/sketches/9med.jpg);
+}
+#l10 {
+	background-image: url(../pictures/sketches/10med.jpg);
+}
+#l11 {
+	background-image: url(../pictures/sketches/11med.jpg);
+}
+#l12 {
+	background-image: url(../pictures/sketchess/12med.jpg);
+}
+
+
+
+
+@media only screen and (min-width:$cut-off+1){
+#li1 {
+	background-image: url(../pictures/sketches/1.jpg);
+}
+#l2 {
+	background-image: url(../pictures/sketches/2.jpg);
+}
+#l3{
+	background-image: url(../pictures/sketches/3.jpg);
+}
+#l4 {
+	background-image: url(../pictures/sketches/4.jpg);
+}
+#l5 {
+	background-image: url(../pictures/sketches/5.jpg);
+}
+#l6 {
+	background-image: url(../pictures/sketches/6.jpg);
+}
+#l7 {
+	background-image: url(../pictures/sketches/7.jpg);
+}
+#l8 {
+	background-image: url(../pictures/sketches/8.jpg);
+}
+#l9 {
+	background-image: url(../pictures/sketches/9.jpg);
+}
+#l10 {
+	background-image: url(../pictures/sketches/10.jpg);
+}
+#l11 {
+	background-image: url(../pictures/sketches/11.jpg);
+}
+#l12 {
+	background-image: url(../pictures/sketches/12.jpg);
+}
+}

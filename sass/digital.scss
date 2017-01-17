@@ -42,30 +42,8 @@
 }
 
 
-@media only screen and (max-width:$cut-off) and (orientation: landscape){
-#main-char{
-	padding-bottom: .6*$char-main-marg-bot;
-	padding-top: 10px;
-}
 
-.single-dot{
-	width: $dot-box-size*.3;
-	height: $dot-box-size*.3;
-}
-#main-char{
-	.slideshow{
-		//border: 2px solid red;
-		height: 80%;
-		margin-top: 5vh;
-		border-bottom: 0px solid red!important;
-		.slide{
-			margin: 20px;
-		}
 
-	}
-}
-
-}
 @media only screen and (min-width:$cut-off+1){
 #ji1 {
 	background-image: url(../pictures/digital/1.jpg);

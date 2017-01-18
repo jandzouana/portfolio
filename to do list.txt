@@ -1,8 +1,7 @@
 
-3.update drawings (end of vacay)
+3.change pictures to smaller
 5.clean up Code
 6. add compass stuff
 
 Today:
-fix about me page ipad
 add container around submit button?

@@ -1,8 +1,6 @@
 
 3.change pictures to smaller
 5.clean up Code
-6. add compass stuff
--add required to form
 -add appropriate images
 
 Today:

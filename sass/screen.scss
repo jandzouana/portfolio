@@ -13,7 +13,6 @@
 
 /*Basics*/
 * {
-  ////border: 1px solid red !important;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -24,7 +23,6 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	//border: 3px solid red;
 	height: 100vh;
 	min-height: 700px;
 		padding:{
@@ -36,7 +34,6 @@
 	}
 
 header {
-	//border: 1px solid green;
 	display: flex;
 	flex-flow: row wrap;
 	position: relative;
@@ -52,7 +49,6 @@ header {
 	justify-content: flex-start;
 	flex-flow: row nowrap;
 	align-items: flex-start;
-	//border: 1px solid orange;
 	a{
 		text-decoration: none;
 	}
@@ -67,7 +63,6 @@ header {
 	width: 100px;
 }
 #logo-text{
-	//border-left: 1px solid #767875;
 	position: absolute;
 	right: 0;
 	height: 100%;
@@ -78,7 +73,6 @@ header {
 	display: flex;
 	flex-direction: column;
   justify-content: flex-start;
-	//align-items: flex-end;
 
 	//extending border line upward
 		h2 {
@@ -99,14 +93,10 @@ header {
 	flex-flow: row nowrap;
 	justify-content: space-around;
 	align-items: center;
-	//width: 270px;
 	height: 100%;
-	//position: absolute;
-	//right: 0;
 	a{
 		text-decoration: none;
 	}
-
 }
 /*soc 1 == social media icons in header
 soc 2 == social media icons in footer*/
@@ -119,7 +109,6 @@ soc 2 == social media icons in footer*/
 }
 
 #soc1{
-	//background-color: pink;
 	display: none;
 }
 
@@ -155,7 +144,6 @@ soc 2 == social media icons in footer*/
 }
 /*Main: Navigation links, portfolio button and footer social media box*/
 .index-main {
-	//border: 3px solid blue;
 	display: flex;
 	flex-direction: column;
 	height: 80%;
@@ -163,7 +151,6 @@ soc 2 == social media icons in footer*/
 /*Picture that shows up in mobile version instead of navigation links*/
 #profile{
 	display: none;
-	//background-color: orange;
 	background-image: url(../pictures/profilemed.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -175,7 +162,6 @@ soc 2 == social media icons in footer*/
 	flex-flow: row nowrap;
 	justify-content: space-around;
 	align-items: center;
-	//border: 1px solid purple;
 }
 .art_nav {
 	display: flex;
@@ -222,15 +208,12 @@ soc 2 == social media icons in footer*/
 	padding-top: 70px;
 	height: auto;
 	justify-content: center;
-	//background-color: blue;
 	a{
 		text-decoration: none;
 		//size of button
 		font-size: 23px;
 	}
-	.btn{
-		//display: none;
-	}
+
 	.portlink{
 		display: none;
 		font-family: AracneRegular;
@@ -262,7 +245,6 @@ soc 2 == social media icons in footer*/
 	}
 	.grid {
 		height: 100vh;
-		//min-height: 400px;
 		min-height: 0;
 		padding:{
 			top: 10px;
@@ -284,7 +266,6 @@ soc 2 == social media icons in footer*/
 		margin-top: 0px;
 		height: 60vh;
 		width: 60vh;
-		//background-color: yellow;
 	}
 	.art_nav{
 		height: 50%;
@@ -300,7 +281,6 @@ soc 2 == social media icons in footer*/
 			transform: translate(0%, 0%);
 
 		}
-		//border: 1px solid red;
 	}
 	.imgcontainer{
 		padding: 10px;
@@ -313,39 +293,28 @@ soc 2 == social media icons in footer*/
 		flex-flow: column nowrap;
 		height: 20%;
 		justify-content: space-around;
-		//background-color: orange;
-	//	align-items: center;
 	}
 	.social-media {
 		position: static;
-		//width: 250px;
-		//height: $sm-m-height;
-		//clear: both;
 	}
 	#brand {
 		flex-direction: column;
-		//border: 1px solid red;
 		justify-content: center;
 		align-items: center;
 		height: 100%;
-		//background-color: blue;
 	}
 	#logo-cont{
 		height: 50%;
 		width: 100%;
-		//background-color: orange;
 	}
 	#logo-org{
 		position: static;
-		//background-color: yellow;
 		height: 100%;
 		width: 100%;
 	}
 	#logo-text{
 		height: 50%;
-		//background-color: green;
 		text-align: center;
-		//border-left: hidden;
 		justify-content: center;
 		padding-left: 0;
 		margin-left: 0;
@@ -361,14 +330,11 @@ soc 2 == social media icons in footer*/
 			margin-left: 0px;
 			font-size: 2vh;
 		}
-
 	}
 }
 
 @media only screen and (max-width: $cut-off) and (orientation:landscape) {
-	.grid{
-		//min-height: 400px;
-	}
+
 	#box{
 		width: 35%;
 	}
@@ -383,7 +349,6 @@ soc 2 == social media icons in footer*/
 	}
 
 	.social-media {
-		//clear: both;
 		width: 90%;
 	}
 	//center social media links center
@@ -391,30 +356,24 @@ soc 2 == social media icons in footer*/
 		display: none;
 	}
 	.index-main{
-		//background-color: orange;
 		height: 65%;
 	}
 	.row{
 		height: 35%;
-		//background-color: green;
 	}
 	#brand{
 		height: 60%;
 	}
 	#profile{
 		display: block;
-		//display: none;
 		height: 80%;
 		width: 100%;
 	}
 
 	#soc1{
-		//background-color: orange;
 		max-width: 25em;
-
 		display: flex;
 		height: 40%;
-		//border: 1px solid orange;
 	}
 	#soc2 {
 		display: none;
@@ -425,19 +384,13 @@ soc 2 == social media icons in footer*/
 		margin-top: 0px;
 	}
 	#box{
-		//background-color: yellow;
 		width: 100% !important;
 		height: 20%;
-
 	}
-
-
-
 	.iconcon {
 		width: 6vh;
 		height: 6vh;
 	}
-
 }
 
 @media only screen and (max-width: 600px) and (orientation:landscape) {
@@ -467,7 +420,6 @@ soc 2 == social media icons in footer*/
 					display: block;
 				}
 		 	 	.overlay{
-					//filter: brightness(125%);
 		 			opacity: 0.65;
 					transition: opacity .25s;
 				}

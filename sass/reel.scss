@@ -3,14 +3,11 @@
 @import "variable";
 
 .reel-container{
-	//border: 1px solid red;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 
 	height: 100%;
-	//border: 1px solid red;
-
 	padding: 10px 30px 100px 30px;
 	p{
 		font-family: AracneRegular;

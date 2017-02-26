@@ -6,7 +6,6 @@
 #main-charsects{
 	display: flex;
 	align-items: center;
-	//border: 1px solid red;
 }
 .section-container{
 	width: 100%;
@@ -18,14 +17,12 @@
 		position: relative;
 		text-align: center;
 		width: 50%;
-		//border: 1px solid green;
 		text-decoration: none;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
 
 		h2{
-			//background-color: grey;
 			padding: 20px;
 			position: absolute;
 			left: 50%;
@@ -34,12 +31,6 @@
 			color: black;
 			font-size: 7vw;
 		}
-	}
-	#sect1{
-		//background-image: url(../pictures/characters/1med.jpg);
-	}
-	#sect2{
-		//background-image: url(../pictures/characters/8med.jpg);
 	}
 }
 

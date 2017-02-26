@@ -12,7 +12,6 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	padding-top: 30px;
-	//border: 2px solid teal;
 	.small h2 {
 		font-size: 4vh !important;
 	}
@@ -23,8 +22,6 @@
 }
 
 .about-container{
-	//border-top: 1px solid $slide-color;
-	//border: 2px solid orange;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -34,7 +31,6 @@
 	padding-left: 80px;
 	padding-right: 80px;
 	h2{
-		//border: 1px solid red;
 		color: $about-header;
 		padding-bottom: 10px;
 		font-size:23px;
@@ -42,7 +38,6 @@
 	}
 	h3{
 		line-height:1.2;
-		//border: 1px solid green;
 		text-align: center;
 		letter-spacing: 1px;
 		font-size: 15px;
@@ -52,7 +47,6 @@
 
 .box1{
 	height: 40%;
-	//border: 2px solid green;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -64,8 +58,6 @@
 	}
 }
 .prof{
-	//border: 1px solid blue;
-
 	width: 30%;
 	background-position: center;
 	background-size: contain;
@@ -78,13 +70,11 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	//border: 1px solid blue;
 }
 
 
 .link-box{
 	height: 10%;
-	//border: 1px solid blue;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -106,16 +96,14 @@
 }
 
 .contact {
-//  border: 3px solid green;
 	width: 100%;
-	height: 300px;
+	height: 315px;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-between;
 
 	form{
-		height:250px;
-		//border: 1px solid purple;
+		height:265px;
 		font-family: AracneRegular;
 		display: flex;
 		flex-flow: column nowrap;
@@ -125,7 +113,6 @@
 	.contact-header{
 		height: 20px;
 		margin-bottom: 10px;
-		//border: 1px solid red;
 	}
 
 	input{
@@ -142,20 +129,15 @@
 
 	input, .captcha-group {
 		height: 33px;
-	//	border: 1px solid blue;
 	}
 	label{
 		color: darken(grey, 20%);
 		margin-top: 5px;
 		height: 16px;
-		//border: 1px solid blue;
 		font-size: 16px;
-
+		//margin-bottom: 5px;
 	}
-
-
 	#submit{
-	//	border: 2px solid blue;
 		font-family: AracneRegular;
 		cursor: pointer;
 		height: 60px;
@@ -173,10 +155,8 @@
 		height: 20px;
 		font-size: 18px;
 		color: black;
-	//	border: 1px solid red;
 	}
 	.captcha-group{
-		//border: 1px solid red;
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-between;
@@ -188,17 +168,15 @@
 			margin-left: 5px;
 		}
 		.captcha{
-			//border: 1px solid red;
 			width: 100px;
 			height: 130%;
 		}
 
 	}
 	.top{
-	//	border: 1px dashed green;
 		display: flex;
 		flex-flow: row nowrap;
-		height: 210px;
+		height: 225px;
 		justify-content: space-between;
 	}
 	.left, .right{
@@ -208,10 +186,10 @@
 		justify-content: space-between;
 	}
 	.right{
-		//border: 1px solid green;
 		justify-content: flex-start;
 		textarea{
-			height: 200px;
+			margin-top: 5px;
+			height: 170px;
 		}
 	}
 }
@@ -220,7 +198,6 @@
 
 @media only screen and (max-width: 1400px){
 	.about-container{
-		//border: 1px solid purple;
 		padding-left: 50px;
 		padding-right: 50px;
 		h2{
@@ -261,19 +238,19 @@
 	}
 
 	#main-about{
-		//border: 1px solid green;
 		justify-content: flex-start;
 		height: 100%;
 		min-height: 100%;
-
 		padding: 0px;
 		padding-top: 30px;
 
 	}
 	.contact{
 		padding: 0px 20px 0px 20px;
-		height: 700px;
-		//border: 1px solid red;
+		height: auto; //changed height from 700px
+		.contact-header{
+			height: 5%;
+		}
 		.captcha-group{
 			margin-bottom:10px;
 			.captcha{
@@ -282,7 +259,6 @@
 		}
 		.top{
 			height: 80%;
-			//border: 1px solid blue;
 			flex-flow: column nowrap;
 			width: 100%;
 		}
@@ -296,7 +272,6 @@
 		#submit{
 			height: 15%;
 			font-size: 25px;
-			//border: 1px solid green;
 		}
 		input, label{
 			font-size: 20px;
@@ -308,10 +283,7 @@
 	}
 
 	.about-container{
-		//border-top: 0px solid red;
-		//border: 3px solid orange;
 		height: 100%;
-		//min-height: 100%;
 		justify-content: flex-start;
 		margin: 0px;
 		padding: 0px 10px 30px 10px;
@@ -355,8 +327,6 @@
   .text{
 		width: 100%;
 		padding: 0px 10px 20px 10px;
-
-		//border: 1px solid blue;
 		height: auto;
 		h2{
 			font-size: 5vh;

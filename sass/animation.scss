@@ -34,7 +34,6 @@
 		display: block;
 	}
 	.anim-title{
-		//border: 1px solid green;
 		height: 4%;
 		margin-left: 30px;
 		margin-bottom: 5px;
@@ -45,7 +44,6 @@
 	}
 
 	.vid-list{
-		//border: 1px solid red;
 		position: relative;
 		margin-left: 30px;
 		margin-right: 30px;
@@ -66,10 +64,8 @@
 				&:hover{
 					color: orange;
 					transition: color 0.2s;
-
 				}
 			}
-
 		}
 		.thumb{
 			background-position: center;
@@ -141,14 +137,10 @@
 			margin-left: 10px;
 			margin-right: 10px;
 			flex-flow: column nowrap;
-			//border: 1px solid purple;
 			margin-bottom: 50px;
 			height: auto;
 			li{
 				margin-bottom: 20px;
-				p{
-					//font-size: 4vh;
-				}
 			}
 			div{
 				width: 100%;
@@ -173,7 +165,6 @@
 	.gallery{
 		margin-top: 25px;
 		height: auto;
-		//border: 1px solid orange;
 		.videos{
 			height: 80vh;
 		}

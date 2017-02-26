@@ -60,6 +60,8 @@ body{
 
 /*container for navigation and main content*/
 .container{
+	margin: auto;
+
 	margin-top: 0px;
 	margin-bottom: 40px;
 	padding-right: 20px;
@@ -193,8 +195,8 @@ body{
 		display: block;
 		font-size: $menu-font-size;
 		letter-spacing: .175em;
-		@include transition-property(color);
-		@include transition-duration(1s);
+		transition: color 0.15s;
+
 		&:hover{
 			color: $hover-menu;
 		}
@@ -203,10 +205,8 @@ body{
 
 
 .main-nav-ul {
-	//border: 1px solid red;
 /*Sub menus*/
 	ul{
-		//border: 1px solid blue;
 		display: none;
 		flex-direction: column;
 		justify-content: space-around;
@@ -214,20 +214,13 @@ body{
 	}
 	.cont-subs{
 		a{
-			//border: 1px solid blue;
 			height: 100%;
 		}
 		margin-bottom: 5px;
 		margin-top: -5px;
-
-		//border: 1px solid red;
 	}
 	li {
-		//border: 1px solid green;
 		height: 50px;
-		a{
-			//border: 1px solid orange;
-		}
 	}
 }
 
@@ -236,22 +229,32 @@ body{
 	display: block;
 }
 
+.arrow-color{
+	color: $hover-menu;
+	transition: color 0.15s;
+}
+.arrow-color-orig{
+	color: lighten(grey, 20%);
+	transition: color 0.15s;
+
+}
 /*arrow that shows up next to sub menus*/
 .sub-arrow{
 	display: inline-block;
+
 	&:after{
 		position: relative;
 		top: 1px;
-		color: lighten(grey, 20%);
+
 		display: inline-block;
 		content: "\2039";
+		//color: $hover-menu;
+
 		font-size: 24px;
 		text-align: center;
 		margin-left: 4px;
 	}
-	&:hover{
-		color: $hover-menu;
-	}
+
 }
 
 /*Footer*/
@@ -261,19 +264,16 @@ body{
 	justify-content: space-around;
 	width: 100%;
 	height: 100px;
-	//border: 1px solid green;
 	position: absolute;
 	bottom: $footer-dist-bot;
 }
 /*social media*/
 .social-media{
-	//border: 1px solid red;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
 	align-items: center;
 	width: 85%;
-	//height: 100%;
 	a{
 		text-decoration: none;
 	}
@@ -282,12 +282,9 @@ body{
 }
 
 .iconcon{
-	//border: 1px solid yellow;
 	padding: 3px;
 	width: $icon-size*.8;
 	height: $icon-size*.8;
-	//margin-left: 25px;
-
 }
 .icon {
 	opacity: .35;
@@ -302,10 +299,8 @@ body{
 
 /*Main content container*/
 main{
-	//border: 2px solid purple;
 	width: $page-width - $menu-width;
 	height: 100%;
-
 }
 
 #main-home{
@@ -326,19 +321,16 @@ main{
 	width: 0vw;
 
 	display: none;
-	//border: 2px solid green;
 	position: relative;
 	padding-top: $nav-height+5;
 	flex-flow: column wrap;
 	justify-content: space-between;
 
 	li{
-		//border: 1px solid red;
 		padding: 2vh;
 		padding-left: 3vh;
 		padding-bottom: 2vh;
 		a{
-			//border: 1px solid red;
 			color: white;
 			opacity: 0.6;
 			text-decoration: none;
@@ -361,8 +353,6 @@ main{
 		padding: 3px;
 		width: $icon-size*1;
 		height: $icon-size*1;
-		//margin-left: 25px;
-
 	}
 }
 @media only screen and (max-width:$cut-off){
@@ -440,16 +430,13 @@ main{
 @media only screen and (max-width:$cut-off) and (orientation: landscape) and (max-height: $max-land-height){
 	.container {
 		flex-direction: row;
-		//border: 1px solid purple;
 		width: 100vw;
 	}
 	.menu{
 		display: none !important;
 	}
 	 main{
-		 //border: 1px solid red;
 		 height: 90%;
-		 //width: 60vw;
 		 width: 100vw!important;
 		margin-top: 5%;
 	}
@@ -460,8 +447,6 @@ main{
 			display: none;
 		}
 	}
-
-
 }
 
 @media only screen and (min-width: $cut-off+1) {

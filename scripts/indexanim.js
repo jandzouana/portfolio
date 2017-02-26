@@ -8,6 +8,16 @@ function add(n){
 	}
 }
 $(document).ready(function(){
+	/*Changing color of little arrow*/
+	$(".cont-subs").hover(
+  function() {
+    $(".sub-arrow" ).addClass("arrow-color");
+		$(".sub-arrow").removeClass("arrow-color-orig");
+  }, function() {
+		$(".sub-arrow" ).removeClass("arrow-color");
+    $(".sub-arrow").addClass("arrow-color-orig");
+  }
+);
 	/*Dot addition n is number of images*/
 	var n = $(".slideshow div").length;
 	add(n);
@@ -26,7 +36,6 @@ $(document).ready(function(){
 		var nextDot = currentDot.next();
 
 		if(currentSlide.is(":last-child")){
-			//alert("last-child");
 			nextSlide = firstSlide;
 			nextDot = firstDot;
 		}
@@ -65,11 +74,8 @@ $(document).ready(function(){
 		$(this).addClass("active-dot");
 		$(currentDot).removeClass("active-dot");
 
-		//alert( "Index: " + $(this).index() );
-
 		var index = $(this).index();
 		index = index + 1;
-		//var index = $dot.index(this);
 		currentSlide.removeClass("active");
 		currentSlide.css("display", "none");
 	  nextSlide = $(".slideshow :nth-child(" + index + ")");
@@ -96,8 +102,6 @@ $(document).ready(function(){
 		currentVid.css("display", "none");
 		nextVid = $(".videos :nth-child(" + index + ")");
 		nextVid.fadeIn(600).addClass("active-vid");
-		//alert("Index: " + index);
-
 	});
 
 
@@ -116,11 +120,11 @@ $(document).ready(function(){
 	      $('.sub-arrow').css({ transition: "transform 0.2s", transform:  "rotate(" + -86 + "deg) translate(0px,-3px)"});
 				rotated = true;
 
-				setTimeout( function() { $(element).css( { transition: "none" } ) }, 500 );
+				setTimeout( function() { $('.sub-arrow').css( { transition: "none" } ) }, 500 );
 			}
 			else{
 				$('.sub-arrow').css({ transition: "transform 0.2s", transform:  "rotate(" + 0 + "deg)"});
-				setTimeout( function() { $(element).css( { transition: "none" } ) }, 500 );
+				setTimeout( function() { $('.sub-arrow').css( { transition: "none" } ) }, 500 );
 				rotated = false;
 			}
 	});
@@ -128,13 +132,10 @@ $(document).ready(function(){
 	/*Mobile navigation icon animation activation*/
 	$("#menuButton").click(function(){
 			$(this).toggleClass('is-active');
-			//$('.text').toggleClass("small");
 			if (menuDown == false){
 				$('.menu').fadeIn("fast");
 				$('.bot-nav-ul').css("width", "30vw");
 				$('.bot-nav-ul li').css("display", "block");
-				//$("main land").css("width", "auto");
-
 				$('.contact').css("padding", "0px 10px 0px 10px");
 
 				menuDown = true;

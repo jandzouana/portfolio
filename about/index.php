@@ -41,7 +41,7 @@ session_start();
 					<ul class="main-nav-ul">
 						<li><a href="../">Home</a></li>
 						<li><a href="../about">About me</a></li>
-						<li class="cont-subs"><a href="#">Art<span class="sub-arrow"></span></a></li>
+						<li class="cont-subs "><a href="#">Art<span class="arrow-color-orig sub-arrow"></span></a></li>
 						<ul>
 							<li><a href="../art/characters">Character Designs</a></li>
 							<li><a href="../art/illustrations">Illustrations</a></li>
@@ -119,13 +119,13 @@ When I started attending university, I wanted to extend my knowledge beyond the 
 							<div class="top">
 						    <div class="left">
 									<label>Name</label>
-							    <input name="name" >
+							    <input name="name" required>
 							    <label>Email</label>
-							    <input name="email" type="email">
+							    <input name="email" type="email" required>
 									<label>Enter Image Text</label>
 									<div class="captcha-group">
 										<img src="captcha.php" class="captcha"/><br>
-										<input name="captcha" type="text">
+										<input name="captcha" type="text" required>
 									</div>
 								</div>
 								<div class="right">

@@ -1,6 +1,5 @@
-
-3.change pictures to smaller
-5.clean up Code
+-change form height
+-change pictures to smaller
 -add appropriate images
 
 Today:

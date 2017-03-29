@@ -247,9 +247,11 @@
 	}
 	.contact{
 		padding: 0px 20px 0px 20px;
-		height: auto; //changed height from 700px
+		height: 700px; //changed height from 700px //changed to auto
+		justify-content: flex-start;
 		.contact-header{
 			height: 5%;
+			margin-bottom: 30px;
 		}
 		.captcha-group{
 			margin-bottom:10px;
@@ -258,13 +260,13 @@
 			}
 		}
 		.top{
-			height: 80%;
+			height: 410px;
 			flex-flow: column nowrap;
 			width: 100%;
 		}
 		.left, .right{
 			width: 100%;
-			height: 50%;
+			height: 200px;
 		}
 		form{
 			height: 80%;

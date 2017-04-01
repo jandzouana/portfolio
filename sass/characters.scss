@@ -180,6 +180,15 @@
 	#k7 {
 		background-image: url(../pictures/characters2/7med.jpg);
 	}
+	#k8{
+		background-image: url(../pictures/characters2/8med.jpg);
+	}
+	#k9 {
+		background-image: url(../pictures/characters2/9med.jpg);
+	}
+	#k10 {
+		background-image: url(../pictures/characters2/10med.jpg);
+	}
 }
 
 @media only screen and (max-width: $cut-off) and (orientation: landscape) and (max-height: $max-land-height){
@@ -263,5 +272,14 @@
 	}
 	#k7 {
 		background-image: url(../pictures/characters2/7.jpg);
+	}
+	#k8{
+		background-image: url(../pictures/characters2/8.jpg);
+	}
+	#k9 {
+		background-image: url(../pictures/characters2/9.jpg);
+	}
+	#k10 {
+		background-image: url(../pictures/characters2/10.jpg);
 	}
 }

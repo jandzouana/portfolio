@@ -11,6 +11,7 @@ session_start();
     <link href="../stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="../scripts/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="../scripts/indexanim.js"></script>
+		<script type="text/javascript" src="../scripts/pagefade.js"></script>
 		<link rel="icon" href="../pictures/brand/logovec4.png">
 
     <!--[if IE]>
@@ -41,7 +42,7 @@ session_start();
 					<ul class="main-nav-ul">
 						<li><a href="../">Home</a></li>
 						<li><a href="../about">About me</a></li>
-						<li class="cont-subs "><a href="#">Art<span class="arrow-color-orig sub-arrow"></span></a></li>
+						<li class="cont-subs"><span class="cont-subs-text">Art<span class="sub-arrow arrow-color-orig"></span></span></li>
 						<ul>
 							<li><a href="../art/characters">Character Designs</a></li>
 							<li><a href="../art/illustrations">Illustrations</a></li>

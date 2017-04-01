@@ -36,6 +36,7 @@
 
 body{
 	padding-top: $page_padding_top;
+	//display: none;
 }
 
 /*Additional classes*/
@@ -214,8 +215,22 @@ body{
 		background-color: $menu-sub;
 	}
 	.cont-subs{
-		a{
-			height: 100%;
+		.cont-subs-text{
+				text-decoration: none;
+				cursor: pointer;
+				display: block;
+				padding: 8px 0 15px 0;
+				text-align: center;
+				color: white;
+				text-transform: uppercase;
+				display: block;
+				font-size: $menu-font-size;
+				letter-spacing: .175em;
+				transition: color 0.15s;
+				&:hover{
+					color: $hover-menu;
+				}
+			//height: 100%;
 		}
 		margin-bottom: 5px;
 		margin-top: -5px;

@@ -1,3 +1,6 @@
--add fade on load? website
+-change form height
+-change pictures to smaller
+-add appropriate images
+-move php inside form
 Today:
 add container around submit button?

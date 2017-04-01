@@ -136,33 +136,33 @@ When I started attending university, I wanted to extend my knowledge beyond the 
 								</div>
 							</div>
 					    <input id="submit" class="btn btn--full" name="submit" type="submit" value="Submit">
-						</form>
-						<?php
-						if (isset($_POST["submit"])){
-							if (isset($_POST["captcha"])&&$_POST["captcha"]!=""&&$_SESSION["code"]==$_POST["captcha"]){
-									$name = $_POST['name'];
-									$email = $_POST['email'];
-									$message = $_POST['message'];
-									$from = 'From: TangledDemo';
-									$to = 'jebranart@gmail.com';
-									$subject = 'Message from portfolio';
+							<?php
+							if (isset($_POST["submit"])){
+								if (isset($_POST["captcha"])&&$_POST["captcha"]!=""&&$_SESSION["code"]==$_POST["captcha"]){
+										$name = $_POST['name'];
+										$email = $_POST['email'];
+										$message = $_POST['message'];
+										$from = 'From: TangledDemo';
+										$to = 'jebranart@gmail.com';
+										$subject = 'Message from portfolio';
 
-									$body = "From: $name\n"."E-mail: $email\n"."Message:\n"."$message";
+										$body = "From: $name\n"."E-mail: $email\n"."Message:\n"."$message";
 
-									if (mail ($to, $subject, $body, $from)) {
-											echo '<h3 class="submitmsg">Your message has been sent!</h3>';
+										if (mail ($to, $subject, $body, $from)) {
 											echo "<script>
 													$('#submit').css('display', 'none');
 											</script>";
-									} else {
-											echo '<h3 class="submitmsg">Something went wrong, go back and try again!</h3>';
+												echo '<h3 class="submitmsg">Your message has been sent!</h3>';
+										} else {
+												echo '<h3 class="submitmsg">Something went wrong, go back and try again!</h3>';
+										}
 									}
+								else {
+									echo '<h3 class="submitmsg">Wrong code entered</h3>';
 								}
-							else {
-								echo '<h3 class="submitmsg">Wrong code entered</h3>';
 							}
-						}
-						?>
+							?>
+						</form>
 					</section>
 				</div>
 			</main>

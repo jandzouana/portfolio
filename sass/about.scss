@@ -100,14 +100,14 @@
 	height: 315px;
 	display: flex;
 	flex-flow: column nowrap;
-	justify-content: space-between;
+	justify-content: flex-start;
 
 	form{
 		height:265px;
 		font-family: AracneRegular;
 		display: flex;
 		flex-flow: column nowrap;
-		justify-content: space-between;
+		justify-content: flex-start;
 
 	}
 	.contact-header{
@@ -141,7 +141,7 @@
 		font-family: AracneRegular;
 		cursor: pointer;
 		height: 60px;
-		margin-top: 10px;
+		margin-top: 20px;
 		font-size: 18px;
 		color: darken(grey, 20%);
 		&:hover{
@@ -155,6 +155,7 @@
 		height: 20px;
 		font-size: 18px;
 		color: black;
+		margin-top: 10px;
 	}
 	.captcha-group{
 		display: flex;

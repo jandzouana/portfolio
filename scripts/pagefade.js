@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
 	$('body').css('display', 'none');
 	$('body').fadeIn(800);
 	$('a').click(function(event) {
@@ -10,3 +10,4 @@ $(document).ready(function() {
 		window.location = newLocation;
 	}
 });
+*/

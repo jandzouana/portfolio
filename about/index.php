@@ -8,6 +8,7 @@ session_start();
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../stylesheets/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="../stylesheets/aboutextra.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="../stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="../scripts/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="../scripts/indexanim.js"></script>

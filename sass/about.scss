@@ -232,10 +232,6 @@
 }
 
 @media only screen and (max-width:$cut-off){
-	html, body{
-		height: 175%;
-		min-height: 100%;
-	}
 
 	#main-about{
 		justify-content: flex-start;
@@ -346,10 +342,7 @@
 	.about-container{
 		margin-top: 80px;
 	}
-	html, body{
-		height: 200%;
-		min-height: 100%;
-	}
+
 	#main-about{
 		padding-top: 0px;
 		h2{

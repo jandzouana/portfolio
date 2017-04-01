@@ -245,6 +245,8 @@
 		padding: 0px 20px 0px 20px;
 		height: 700px; //changed height from 700px //changed to auto
 		justify-content: flex-start;
+		width: 100% !important;
+
 		.contact-header{
 			height: 5%;
 			margin-bottom: 30px;
@@ -258,14 +260,15 @@
 		.top{
 			height: 410px;
 			flex-flow: column nowrap;
-			width: 100%;
+			width: 100% !important;
 		}
 		.left, .right{
-			width: 100%;
+			width: 100% !important;
 			height: 200px;
 		}
 		form{
 			height: 80%;
+			width: 100% !important;
 		}
 		#submit{
 			height: 15%;
@@ -273,6 +276,7 @@
 		}
 		input, label{
 			font-size: 20px;
+			width: 100% !important;
 			height: 14%;
 		}
 		.submitmsg{

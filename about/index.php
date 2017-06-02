@@ -102,7 +102,6 @@ session_start();
 			<main id = "main-about">
 				<div class="about-container">
 					<div class="box1">
-						<div class="prof"> </div>
 						<div class="text">
 							<h2>About me</h2>
 							<h3>My name is Jessica Andzouana and I am a visual artist and programmer. I am currently a senior studying Computer Science and Studio Art at Santa Clara University. Artistically I have experience with various digital and traditional mediums, but I am primarily interested in animation and illustration. I love designing characters and no matter which medium I choose, characters become central to my art. Animation is especially appealing to me because it allows me bring characters to life by giving them personality, emotion, and thoughts by placing them in a visual narrative. <br> <br>
@@ -113,8 +112,8 @@ When I started attending university, I wanted to extend my knowledge beyond the 
 					<div class="link-box">
 						<a href="../docs/artist.pdf" target="_blank"> Artist Statement</a>
 						<a href="../docs/resume.pdf" target="_blank"> Resume </a>
+						<h3 href="#" id="contact-button"> Contact me </h3>
 					</div>
-
 					<section class="contact">
 						<h2 class="contact-header"> Contact me </h2>
 						<form method="post" action="">
@@ -135,7 +134,7 @@ When I started attending university, I wanted to extend my knowledge beyond the 
 						    	<textarea name="message"></textarea>
 								</div>
 							</div>
-					    <input id="submit" class="btn btn--full" name="submit" type="submit" value="Submit">
+							<input id="submit" class="btn" name="submit" type="submit" value="Submit">
 							<?php
 							if (isset($_POST["submit"])){
 								if (isset($_POST["captcha"])&&$_POST["captcha"]!=""&&$_SESSION["code"]==$_POST["captcha"]){

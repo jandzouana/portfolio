@@ -8,6 +8,14 @@ function add(n){
 	}
 }
 $(document).ready(function(){
+	/*Showing contact info*/
+	$("#contact-button").click(function(){
+		$(".box1").slideUp("slow");
+		$(".link-box").slideUp("slow");
+		$(".contact").css("display", "flex");
+		//$(".contact").slideUp("slow");
+	});
+	
 	/*Changing color of little arrow*/
 	$(".cont-subs").hover(
   function() {

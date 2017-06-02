@@ -76,11 +76,10 @@
 
 
 .link-box{
-	//border: 1px solid green;
-	height: 20%;
+	height: 125px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	align-content: flex-start;
 	align-self: flex-start;
 	margin-top: 35px;
@@ -286,10 +285,11 @@
 			text-align: center;
 		}
 		.link-box{
-			justify-content: center;
-			align-content: center;
+			justify-content: space-between;
+			align-content: flex-start;
 			align-self: center;
 			margin-bottom: 40px;
+
 			a, h3{
 				font-size: 22px;
 				text-align: center;

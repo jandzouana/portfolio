@@ -22,13 +22,13 @@
 }
 
 .about-container{
-	border: 1px solid red;
+	//border: 1px solid red;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: flex-start;
 	width: auto;
-	height: 95%;
+	height: auto;
 	padding-left: 80px;
 	padding-right: 80px;
 	h2{
@@ -83,6 +83,8 @@
 	justify-content: center;
 	align-content: flex-start;
 	align-self: flex-start;
+	margin-top: 35px;
+
 	a, h3{
 		font-family: AracneRegular;
 		font-size: 18px;
@@ -99,13 +101,13 @@
 }
 
 .contact {
-	border: 1px solid orange;
+	//border: 1px solid orange;
 	display: none;
 	width: 100%;
 	max-width: 800px;
 	height: $page-height;
 	flex-flow: column nowrap;
-	justify-content: space-between;
+	justify-content: flex-start;
 
 	form{
 		//border: 3px solid pink;
@@ -120,7 +122,7 @@
 	}
 	.contact-header{
 		height: 20px;
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 	}
 
 	input{
@@ -204,31 +206,48 @@
 		textarea{
 			margin-top: 5px;
 			height: 250px;
+			resize: none;
 		}
 	}
 }
 
 
-@media only screen and (max-width: 1400px){
-
+@media only screen and (max-width:1400px) and (min-width:$cut-off+1){
+	.box1{
+		h2{
+			font-size: 34px;
+		}
+		h3{
+			font-size: 17px;
+		}
+	}
 }
 
-@media only screen and (max-width: 985px){
+@media only screen and (max-width:1200px) and (min-width:$cut-off+1){
+	.box1{
+		h2{
+			font-size: 26px;
+		}
+		h3{
+			font-size: 16px;
+		}
+	}
 }
 
 @media only screen and (max-width:$cut-off){
 
 	#main-about{
 		justify-content: flex-start;
-		height: 100%;
-		min-height: 100%;
+		height: auto;
 		padding: 0px;
 		padding-top: 30px;
+		padding-left: 3px;
+		padding-right: 3px;
 
 	}
 	.contact{
 		padding: 0px 20px 0px 20px;
-		height: 700px; //changed height from 700px //changed to auto
+		height: $page-height; //changed height from 700px //changed to auto
 		justify-content: flex-start;
 		width: 100% !important;
 
@@ -242,27 +261,14 @@
 				width: 100px;
 			}
 		}
-		.top{
-			height: 410px;
-			flex-flow: column nowrap;
-			width: 100% !important;
-		}
-		.left, .right{
-			width: 100% !important;
-			height: 200px;
-		}
-		form{
-			height: 80%;
-			width: 100% !important;
-		}
+
 		#submit{
 			height: 15%;
 			font-size: 25px;
 		}
 		input, label{
-			font-size: 20px;
+			font-size: 24px;
 			width: 100% !important;
-			height: 14%;
 		}
 		.submitmsg{
 			font-size: 20px;
@@ -270,22 +276,21 @@
 	}
 
 	.about-container{
-		height: 100%;
+		height: auto;
 		justify-content: flex-start;
 		margin: 0px;
 		padding: 0px 10px 30px 10px;
 		h2{
-			font-size: 5vh;
+			font-size: 36px;
 			text-align: center;
 		}
 		.link-box{
 			justify-content: center;
 			align-content: center;
 			align-self: center;
-			height: 5%;
 			margin-bottom: 40px;
-			a{
-				font-size: 25px;
+			a, h3{
+				font-size: 22px;
 				text-align: center;
 			}
 		}
@@ -315,12 +320,6 @@
 		width: 100%;
 		padding: 0px 10px 20px 10px;
 		height: auto;
-		h2{
-			font-size: 5vh;
-		}
-		h3{
-			font-size: 2.5vh;
-		}
 
 	}
 
@@ -329,70 +328,7 @@
 
 @media only screen and (max-width:$cut-off) and (orientation:landscape) and (max-height: $max-land-height){
 	.about-container{
-		margin-top: 80px;
-	}
-
-	#main-about{
-		padding-top: 0px;
-		h2{
-			font-size: 8.5vh;
-		}
-	}
-	.contact{
-		padding: 0px 90px 0px 90px;
-		label, #submit{
-			font-size: 4vh;
-		}
-		.right{
-			height: 40%;
-			label{
-				height: 20%;
-			}
-			textarea{
-				height: 80%;
-			}
-		}
-		.left{
-			height: 60%;
-		}
-		.top{
-			height: 80%;
-		}
-		#submit{
-			height: 80px;
-		}
-	}
-	.link-box{
-		a{
-			font-size: 5vh;
-		}
-	}
-
-	.text{
-		h2{
-			font-size: 8.6vh;
-		}
-		h3{
-			font-size: 3.5vh;
-		}
+		margin-top: 40px;
 	}
 }
 
-@media only screen and (max-width:$cut-off) and (orientation:landscape) and (max-height: $max-land-height - 200){
-		.text{
-			h3{
-				font-size: 5vh;
-			}
-		}
-		.contact{
-			.top{
-				height: 90%;
-			}
-			#submit{
-				height: 10%;
-			}
-			label, #submit{
-				font-size: 6vh;
-			}
-		}
-	}

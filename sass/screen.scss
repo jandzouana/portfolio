@@ -10,7 +10,7 @@
 @import "variable";
 @import "responsive";
 
-
+//
 /*Basics*/
 * {
 	-webkit-box-sizing: border-box;
@@ -117,7 +117,7 @@ soc 2 == social media icons in footer*/
 	padding: 3px;
 	width: $icon-size;
 	height: $icon-size;
-	opacity: 0.65;
+	opacity: 0.5;
 	&:hover{
 		opacity: 1.0;
 		transition: opacity .35s;
@@ -130,17 +130,21 @@ soc 2 == social media icons in footer*/
 
 
 #yt{
-	background-image: url(../icons/yt.svg);
+	background-image: url(../icons/ytb.svg);
 }
 
 #ig{
-	background-image: url(../icons/ig.svg);
+	background-image: url(../icons/igb.svg);
 }
 #tw{
-	background-image: url(../icons/twitter.svg);
+	background-image: url(../icons/twitterb.svg);
 }
 #wp{
-	background-image: url(../icons/wp.svg);
+	background-image: url(../icons/wpb.svg);
+}
+
+#gh{
+	background-image: url(..//icons/ghb.svg);
 }
 /*Main: Navigation links, portfolio button and footer social media box*/
 .index-main {
@@ -388,8 +392,8 @@ soc 2 == social media icons in footer*/
 		height: 20%;
 	}
 	.iconcon {
-		width: 6vh;
-		height: 6vh;
+		width: $icon-home;
+		height: $icon-home;
 	}
 }
 

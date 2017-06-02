@@ -10,8 +10,8 @@ function add(n){
 $(document).ready(function(){
 	/*Showing contact info*/
 	$("#contact-button").click(function(){
-		$(".box1").slideUp("slow");
-		$(".link-box").slideUp("slow");
+		$(".box1").slideUp();
+		$(".link-box").slideUp();
 		$(".contact").css("display", "flex");
 		//$(".contact").slideUp("slow");
 	});

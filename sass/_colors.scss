@@ -9,5 +9,6 @@ $menu-mob: darken($menu-nav, 5%);
 $hover-menu: darken(#ffbf5e, 6%);
 $slide-color: #d3d3d3;
 //$btn-color: darken(grey, 20%);
-$btn-color: $menu;
+$btn-outline: lighten(#4A5670, 10%);
+$btn-color: $hover-menu;
 $about-header: lighten(#273f66, 10%);

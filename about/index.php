@@ -67,6 +67,9 @@ session_start();
 						<a class="iconcon" href="http://thejandz.wordpress.com" target="_blank">
 							<img class="icon" src="../icons/wpw.svg" alt="wordpress">
 						</a>
+						<a class="iconcon" href="http://github.com/jandzouana" target="_blank">
+							<img class="icon" src="../icons/ghw.svg" alt="gh">
+						</a>
 					</div>
 					<div id="copy"><h3>Copyright © 2017 Jessica Andzouana</h3></div>
 				</div>
@@ -93,6 +96,9 @@ session_start();
 							</a>
 							<a class="iconcon" href="http://thejandz.wordpress.com" target="_blank">
 								<img class="icon" src="../icons/wpw.svg" alt="wordpress">
+							</a>
+							<a class="iconcon" href="http://github.com/jandzouana" target="_blank">
+								<img class="icon" src="../icons/github.svg" alt="github">
 							</a>
 						</div>
 						<div id="copy"><h3>Copyright © 2017 Jessica Andzouana</h3></div>

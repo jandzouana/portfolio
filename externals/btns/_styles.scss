@@ -57,7 +57,7 @@
 }
 .btn:hover {
 	color: white;
-	background-color: $btn-outline;
+	background-color: $btn-color;
 	transition: background-color .3s, color .3s, border .3s;
 }
 
@@ -252,7 +252,6 @@
 @media screen and (max-width: 600px){
 //changes color on button(on hover) for mobile version of website
 	.btn:hover{
-		background-color: $btn-color;
 	}
 	.btn--full {
     max-width: 16em!important;

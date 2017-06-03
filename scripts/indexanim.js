@@ -10,10 +10,10 @@ function add(n){
 $(document).ready(function(){
 	/*Showing contact info*/
 	$("#contact-button").click(function(){
-		$(".box1").slideUp();
-		$(".link-box").slideUp();
-		$(".contact").css("display", "flex");
-		//$(".contact").slideUp("slow");
+		$(".box1").hide();
+		$(".link-box").hide();
+		$("#main-about").css("justify-content", "center");
+		$(".contact").fadeIn(600);
 	});
 	
 	/*Changing color of little arrow*/

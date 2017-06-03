@@ -8,6 +8,7 @@
 }
 
 #main-about{
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -22,7 +23,6 @@
 }
 
 .about-container{
-	//border: 1px solid red;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
@@ -30,7 +30,7 @@
 	width: auto;
 	height: auto;
 	padding-left: 80px;
-	padding-right: 80px;
+	padding-right: 40px;
 	h2{
 		color: $about-header;
 		padding-bottom: 20px;
@@ -47,8 +47,8 @@
 }
 
 .box1{
-	//border: 2px solid purple;
-	height: 80%;
+	height: auto;
+	min-height: 450px;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -69,6 +69,7 @@
 }
 .text{
 	width: 100%;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -76,7 +77,7 @@
 
 
 .link-box{
-	height: 125px;
+	height: 120px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -100,7 +101,7 @@
 }
 
 .contact {
-	//border: 1px solid orange;
+	display: none;
 	display: none;
 	width: 100%;
 	max-width: 800px;
@@ -109,7 +110,6 @@
 	justify-content: flex-start;
 
 	form{
-		//border: 3px solid pink;
 		height:90%;
 		font-family: AracneRegular;
 		display: flex;
@@ -186,15 +186,13 @@
 
 	}
 	.top{
-		//border: 1px dashed orange;
 		display: flex;
 		flex-flow: column nowrap;
-		height: 550px;
+		height: 450px;
 		width: 100%;
 		justify-content: space-between;
 	}
 	.left, .right{
-		//border: 1px solid red;
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: space-between;
@@ -204,7 +202,7 @@
 		justify-content: flex-start;
 		textarea{
 			margin-top: 5px;
-			height: 250px;
+			height: 200px;
 			resize: none;
 		}
 	}
@@ -214,19 +212,17 @@
 @media only screen and (max-width:1400px) and (min-width:$cut-off+1){
 	.box1{
 		h2{
-			font-size: 34px;
 		}
 		h3{
-			font-size: 17px;
+			font-size: 18px;
 		}
 	}
 }
 
-@media only screen and (max-width:1200px) and (min-width:$cut-off+1){
+@media only screen and (max-width:1000px) and (min-width:$cut-off+1){
 	.box1{
-	//nothing
 		h2{
-			font-size: 26px;
+			font-size: 30px;
 		}
 		h3{
 			font-size: 16px;
@@ -246,7 +242,7 @@
 
 	}
 	.contact{
-		padding: 0px 20px 0px 20px;
+		padding: 0px 12px 0px 12px;
 		height: $page-height; //changed height from 700px //changed to auto
 		justify-content: flex-start;
 		width: 100% !important;

@@ -58,7 +58,7 @@ session_start();
 						<a class="iconcon" href="http://youtube.com/jessicaworks951" target="_blank">
 	            <img class="icon" id="youtube" src="../icons/ytw.svg" alt="youtube">
 	          </a>
-						<a class="iconcon" id = "link" href="http://instagram.com/jebranart" target="_blank">
+						<a class="iconcon" id = "link" href="http://instagram.com/animatedjess" target="_blank">
 							<img class="icon" src="../icons/igw.svg" alt="instagram">
 						</a>
 						<a class="iconcon" href="http://twitter.com/jebranart" target="_blank">
@@ -88,7 +88,7 @@ session_start();
 							<a class="iconcon" href="http://youtube.com/jessicaworks951" target="_blank">
 		            <img class="icon" id="youtube" src="../icons/ytw.svg" alt="youtube">
 		          </a>
-							<a class="iconcon" id = "link" href="http://instagram.com/jebranart" target="_blank">
+							<a class="iconcon" id = "link" href="http://instagram.com/animatedjess" target="_blank">
 								<img class="icon" src="../icons/igw.svg" alt="instagram">
 							</a>
 							<a class="iconcon" href="http://twitter.com/jebranart" target="_blank">
@@ -110,7 +110,7 @@ session_start();
 					<div class="box1">
 						<div class="text">
 							<h2>About me</h2>
-							<h3>My name is Jessica Andzouana and I am a visual artist and programmer. I am currently a senior studying Computer Science and Studio Art at Santa Clara University. Artistically I have experience with various digital and traditional mediums, but I am primarily interested in animation and illustration. I love designing characters and no matter which medium I choose, characters become central to my art. Animation is especially appealing to me because it allows me bring characters to life by giving them personality, emotion, and thoughts by placing them in a visual narrative. <br> <br>
+							<h3>My name is Jessica Andzouana and I am a visual artist and programmer. I have recently graduated Santa Clara University where I was studying Computer Science and Studio Art. Artistically I have experience with various digital and traditional mediums, but I am primarily interested in animation and illustration. I love designing characters and no matter which medium I choose, characters become central to my art. Animation is especially appealing to me because it allows me bring characters to life by giving them personality, emotion, and thoughts by placing them in a visual narrative. <br> <br>
 When I started attending university, I wanted to extend my knowledge beyond the arts and I was particularly drawn to computer science. As far as programming, my interests include front-end web development, software development and UI/UX design. I really enjoy thinking analytically to solve simple and complex problems with programming. Lately my major inclination has been towards Virtual Reality and Augmented Reality. I am currently creating various interactive experiences using Unity to learn how to design immersive, user-friendly interfaces. These projects allow me to use my programming background to fulfill my creative vision while exploring these emerging media.
 							</h3>
 						</div>

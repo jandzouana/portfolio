@@ -57,12 +57,13 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		#portfolio-button{
+		#portfolio-button-mobile{
 			text-align: center;
 			text-decoration: none;
 			font-size: 7.5vh;
 			color: $portfolio-btn;
 			font-family: Aracne;
+			letter-spacing: 0.12em;
 			&:hover{
 				color: orange; transition: color .15s;
 			}
@@ -113,8 +114,8 @@ header {
 	}
 }
 #logo-org {
-	opacity: 1;
-	background-image: url(../pictures/brand/logovec4.png);
+	opacity: 0.5;
+	background-image: url(../pictures/brand/logovec-blue.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -137,12 +138,14 @@ header {
 		h2 {
 			padding-top: 10px;
 			margin-bottom: 6px;
+			letter-spacing: 0.12em;
 		}
 		h3 {
 			text-align: right;
 			padding-bottom: 10px;
 			margin-left: 4px;
 			color: $sub-head-color;
+			letter-spacing: .05em;
 		}
 }
 
@@ -265,23 +268,27 @@ soc 2 == social media icons in footer*/
 }
 /*Portfolio link button*/
 #box{
+//border: 1px solid red;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	padding-top: 70px;
 	height: auto;
-	justify-content: center;
-	a{
-		text-decoration: none;
-		//size of button
-		font-size: 23px;
-	}
+	align-items: center;
 
-	.portlink{
-		display: none;
-		font-family: AracneRegular;
-		margin: auto;
-		color: black;
+		#portfolio-button{
+		text-align: center;
+		text-decoration: none;
+		font-size: 46px;
+		letter-spacing: 0.5em;
+		color: $portfolio-btn;
+		font-family: Aracne;
+		&:hover{
+			color: orange; transition: color .15s;
+		}
+		&:active{
+			color: lighten(orange, 25%);
+		}
 	}
 }
 
@@ -478,9 +485,7 @@ soc 2 == social media icons in footer*/
 			display: none;
 			border: 1px solid red;
 		}
-		#portfolio-button{
-			background-color: yellow;
-		}
+
 	.art_nav{
 		h2, h3 {
 			font-family: AracneLight;

@@ -19,6 +19,65 @@
 	box-sizing: border-box;
 }
 
+.home-mobile-grid{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	#home-background{
+		width: 100%;
+		height: 80%;
+		//border: 2px solid blue;
+		background-image: url("../pictures/collage.jpg");
+		background-position:center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		#home-mobile-logo{
+			//border: 2px solid blue;
+			width: 65%;
+			height: 75%;
+			background-image: url("../pictures/brand/logovec4.png");
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+			-webkit-filter: invert(100%); filter: invert(100%);
+		}
+	}
+	#home-mobile-footer{
+		//border: 2px solid red;
+		width: 100%;
+		height: 20%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		#portfolio-button{
+			text-align: center;
+			text-decoration: none;
+			font-size: 7.5vh;
+			color: $portfolio-btn;
+			font-family: Aracne;
+			&:hover{
+				color: orange; transition: color .15s;
+			}
+			&:active{
+				color: lighten(orange, 25%);
+			}
+		}
+		
+
+		
+	}
+
+}
+
+
 .grid {
 	display: flex;
 	flex-direction: column;
@@ -243,6 +302,9 @@ soc 2 == social media icons in footer*/
 }
 /*Tablets (Square boxes)*/
 @media only screen and (max-width: $cut-off) {
+	.grid{
+		display: none;
+	}
 	.index-main{
 		height: 80%;
 		align-items: center;
@@ -412,6 +474,13 @@ soc 2 == social media icons in footer*/
 
 /*Desktop*/
 @media only screen and (min-width: $cut-off+1){
+		.home-mobile-grid{
+			display: none;
+			border: 1px solid red;
+		}
+		#portfolio-button{
+			background-color: yellow;
+		}
 	.art_nav{
 		h2, h3 {
 			font-family: AracneLight;

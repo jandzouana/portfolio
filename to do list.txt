@@ -4,3 +4,7 @@ Today:
 add container around submit button?
 button on home page blue
 fix ipad about page
+
+-check on ipad
+-add drop down for social media
+-round corners0

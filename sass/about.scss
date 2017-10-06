@@ -20,6 +20,7 @@
 		font-size: 2.75vh !important;
 	}
 	min-width: 320px;
+	max-width: 900px;
 }
 
 .about-container{
@@ -41,7 +42,7 @@
 		line-height:1.2;
 		text-align: center;
 		letter-spacing: 1px;
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 }
@@ -147,7 +148,7 @@
 		margin-bottom: 5px;
 	}
 	#submit{
-	
+
 		font-family: AracneRegular;
 		cursor: pointer;
 		height: 60px;
@@ -208,24 +209,25 @@
 	}
 }
 
-
+// a little smaller still desktop
 @media only screen and (max-width:1400px) and (min-width:$cut-off+1){
 	.box1{
 		h2{
 		}
 		h3{
-			font-size: 18px;
+			//font-size: 16px;
 		}
 	}
 }
 
+//between tablet and small desktop size
 @media only screen and (max-width:1000px) and (min-width:$cut-off+1){
 	.box1{
 		h2{
 			font-size: 30px;
 		}
 		h3{
-			font-size: 16px;
+			font-size: 15px;
 		}
 	}
 }
@@ -287,7 +289,7 @@
 			margin-bottom: 40px;
 
 			a, h3{
-				font-size: 22px;
+				font-size: 20px;
 				text-align: center;
 			}
 		}
@@ -328,4 +330,3 @@
 		margin-top: 40px;
 	}
 }
-

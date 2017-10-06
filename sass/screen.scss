@@ -256,7 +256,9 @@ soc 2 == social media icons in footer*/
 	img {
 		max-width: 100%;
 		height: auto;
+		border-radius:  2px;
 	}
+	//border: 1px solid red;
 }
 //overlay of mousehover on navigation pictures
 .overlay{
@@ -266,6 +268,7 @@ soc 2 == social media icons in footer*/
 	width: 100%;
 	height: 100%;
 	background-color: $overlay;
+	border-radius:  2px;
 
 }
 /*Portfolio link button*/
@@ -361,6 +364,7 @@ soc 2 == social media icons in footer*/
 		padding: 10px;
 		height: 100%;
 		width: auto;
+
 	}
 
 	.row {

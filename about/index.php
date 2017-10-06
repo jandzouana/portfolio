@@ -140,7 +140,7 @@ When I started attending university, I wanted to extend my knowledge beyond the 
 						    	<textarea name="message"></textarea>
 								</div>
 							</div>
-							<input id="submit" class="btn" name="submit" type="submit" value="Send">
+							<input id="submit" name="submit" type="submit" value="Send">
 							<?php
 							if (isset($_POST["submit"])){
 								if (isset($_POST["captcha"])&&$_POST["captcha"]!=""&&$_SESSION["code"]==$_POST["captcha"]){

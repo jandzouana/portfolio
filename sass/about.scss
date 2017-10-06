@@ -109,6 +109,7 @@
 	height: $page-height;
 	flex-flow: column nowrap;
 	justify-content: flex-start;
+	padding-top: 30px;
 
 	form{
 		height:90%;
@@ -117,12 +118,12 @@
 		flex-flow: column nowrap;
 		justify-content: flex-start;
 		align-items: flex-start;
-		width: 100%;
+		width: 70%;
 
 	}
 	.contact-header{
 		height: 20px;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 	}
 
 	input{
@@ -138,13 +139,13 @@
 	}
 
 	input, .captcha-group {
-		height: 33px;
+		height: 28px;
 	}
 	label{
 		color: darken(grey, 20%);
 		margin-top: 0px;
 		height: 16px;
-		font-size: 19px;
+		font-size: 16px;
 		margin-bottom: 5px;
 	}
 	#submit{
@@ -155,9 +156,15 @@
 		width: 200px;
 		margin-top: 20px;
 		font-size: 18px;
-		color: darken(grey, 20%);
+		color: grey;
+		text-align: center !important;
+		border-radius: 5px !important;
+		border: 1.5px solid lightgray;
 		&:hover{
 			color: white;
+			background-color: $hover-menu;
+			border: 1.5px solid white;
+			transition: border .2s;
 		}
 		-webkit-border-radius:0;
 		border-radius:0;
@@ -252,6 +259,7 @@
 		.contact-header{
 			height: 5%;
 			margin-bottom: 30px;
+			margin-top: 10px;
 		}
 		.captcha-group{
 			margin-bottom:10px;
@@ -265,11 +273,14 @@
 			font-size: 25px;
 		}
 		input, label{
-			font-size: 24px;
+			font-size: 20px;
 			width: 100% !important;
 		}
 		.submitmsg{
 			font-size: 20px;
+		}
+		form{
+			width: 100%;
 		}
 	}
 

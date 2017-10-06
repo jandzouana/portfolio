@@ -7,8 +7,4 @@ fix ipad about page
 
 -check on ipad
 -add drop down for social media
--round corners home page characters
--contact me form font size / button
-- move character up on home page
-- gradient overlay/fade?
 - add more characters to character design page

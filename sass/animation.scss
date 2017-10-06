@@ -10,6 +10,10 @@
 	height: 100%;
 }
 
+.anim-title{
+	display: none;
+}
+
 .gallery{
 	height: 100%;
 	display: flex;
@@ -60,7 +64,8 @@
 			p{
 				margin-top: 10px;
 				font-family: AracneRegular;
-				font-size: 130%;
+				font-size: 18px;
+				text-align: center;
 				&:hover{
 					color: orange;
 					transition: color 0.2s;
@@ -132,6 +137,9 @@
 		.anim-title{
 			height: 50px;
 			margin-top: 50px;
+			display: flex;
+			align-items: center;
+			margin-left: 10px;
 		}
 		.vid-list{
 			margin-left: 10px;
@@ -141,6 +149,10 @@
 			height: auto;
 			li{
 				margin-bottom: 20px;
+				p{
+					text-align: left;
+					margin-left: 2px;
+				}
 			}
 			div{
 				width: 100%;

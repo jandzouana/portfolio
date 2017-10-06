@@ -34,7 +34,7 @@
 		background-position:center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		
+
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -71,9 +71,9 @@
 				color: lighten(orange, 25%);
 			}
 		}
-		
 
-		
+
+
 	}
 
 }
@@ -238,7 +238,7 @@ soc 2 == social media icons in footer*/
 	/*Text for art navigation*/
 	h2, h3 {
 		font-family: AracneRegular;
-		font-size: 40px;
+		font-size: 36px !important;
 		text-decoration: none;
 		position: absolute;
 		left: 50%;

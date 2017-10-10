@@ -4,19 +4,29 @@
 @import "variable";
 
 
-@media only screen and (max-width:$cut-off){
-
+@media only screen and (max-width:450px){
 	html, body{
-		height: 175%;
+		height: 180%;
+		min-height: 400px;
+	}
+}
+@media only screen and (max-width:$cut-off){
+	.about-container{
+		margin-top: 30px;
+		//border: 2px solid green;
+	}
+	html, body{
+		height: 150%;
 		min-height: 100%;
 	}
 }
 @media only screen and (max-width:$cut-off) and (orientation:landscape) and (max-height: $max-land-height){
 	.about-container{
-		margin-top: 80px;
+		//margin-top: 80px;
 	}
 	html, body{
-		height: 250%;
+		//border: 2px solid red;
+		height: 150%;
 		min-height: 100%;
 	}
 }

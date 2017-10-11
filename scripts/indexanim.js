@@ -8,6 +8,32 @@ function add(n){
 	}
 }
 $(document).ready(function(){
+	/*Clicking on social media button on home page*/
+	var socClicked = false;
+	$(".home-soc-button").click(function(){
+		if(!socClicked){
+			$(".home-mobile-iconcon").fadeIn(600);
+			$(".home-mobile-iconcon").css("display", "flex");
+			$(".home-soc-button").addClass("soc-button-clicked");
+			$(".home-soc-button").removeClass("home-soc-hover");
+
+			$(".long-line").removeClass("line-hover");
+			$(".long-line").addClass("soc-line-clicked");
+			$(".short-line").addClass("soc-line-clicked");
+			socClicked = true;
+
+		}
+		else{
+			$(".home-mobile-iconcon").fadeOut(600);
+			$(".home-soc-button").removeClass("soc-button-clicked");
+			$(".home-soc-button").addClass("home-soc-hover");
+
+			$(".long-line").addClass("line-hover");
+			$(".long-line").removeClass("soc-line-clicked");
+			$(".short-line").removeClass("soc-line-clicked");
+			socClicked = false;
+		}
+	});
 	/*Showing contact info*/
 	$("#contact-button").click(function(){
 		$(".box1").hide();
@@ -15,7 +41,7 @@ $(document).ready(function(){
 		$("#main-about").css("justify-content", "center");
 		$(".contact").fadeIn(600);
 	});
-	
+
 	/*Changing color of little arrow*/
 	$(".cont-subs").hover(
   function() {

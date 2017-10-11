@@ -32,18 +32,21 @@
 	//border: 1px solid red;
 	justify-content: space-between;
 	align-items: center;
-	.home-mobile-iconcon,	.home-soc-button{
+	.home-soc-button{
 			box-shadow: 2px 2px 30px rgb(40,40,40);
 		}
-	.home-soc-button{
+	.home-soc-hover{
 		&:hover{
 			background-color: black;
 			transition: background-color .4s;
-			.long-line, .short-line{
+			.line-hover{
 					background-color: white;
 					transition: background-color .3s;
 			}
 		}
+	}
+	.home-soc-button{
+
 		height: $home-icon-size;
 		width: $home-icon-size;
 		background-color: white;
@@ -73,7 +76,7 @@
 		width: $home-icon-size;
 		background-color: white;
 		border-radius: 50px;
-		display: flex;
+		display: none; //flex
 		justify-content: center;
 		align-items: center;
 
@@ -84,6 +87,13 @@
 	}
 }
 
+.soc-button-clicked{
+	background-color: black !important;
+}
+
+.soc-line-clicked{
+	background-color: white !important;
+}
 .home-mobile-grid{
 	width: 100vw;
 	height: 100vh;

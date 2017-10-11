@@ -19,6 +19,71 @@
 	box-sizing: border-box;
 }
 
+.home-soc-group{
+	margin-top: 10px;
+	margin-right: 10px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+	width: auto;
+	//border: 1px solid red;
+	justify-content: space-between;
+	align-items: center;
+	.home-mobile-iconcon,	.home-soc-button{
+			box-shadow: 2px 2px 30px rgb(40,40,40);
+		}
+	.home-soc-button{
+		&:hover{
+			background-color: black;
+			transition: background-color .4s;
+			.long-line, .short-line{
+					background-color: white;
+					transition: background-color .3s;
+			}
+		}
+		height: $home-icon-size;
+		width: $home-icon-size;
+		background-color: white;
+		border-radius: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		flex-direction: column;
+		.long-line, .short-line{
+			background-color: black;
+			border-radius: 50px;
+			height: 5px;
+			margin-right: 12px;
+
+		}
+		.long-line{
+			width: 50%;
+			margin-bottom: 2.5px;
+		}
+		.short-line{
+			width: 25%;
+			margin-top: 2.5px;
+		}
+	}
+	.home-mobile-iconcon{
+		height: $home-icon-size;
+		width: $home-icon-size;
+		background-color: white;
+		border-radius: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img{
+			height: 60%;
+			width: auto;
+		}
+	}
+}
+
 .home-mobile-grid{
 	width: 100vw;
 	height: 100vh;
@@ -502,7 +567,10 @@ soc 2 == social media icons in footer*/
 @media only screen and (min-width: $cut-off+1){
 		.home-mobile-grid{
 			display: none;
-			border: 1px solid red;
+		}
+
+		.home-soc-group{
+			display: none;
 		}
 
 	.art_nav{

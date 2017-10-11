@@ -1,5 +1,8 @@
 
+UI
 - add drop down for social media
 - fix monster cutoff thing
-- increase number of characters showing in character design3
 - loading screen
+
+Website
+- Find host

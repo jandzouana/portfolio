@@ -8,6 +8,14 @@ function add(n){
 	}
 }
 $(document).ready(function(){
+	/*Make logo and portfolio button appear*/
+	$("#home-mobile-logo").css("display", "none");
+	$("#home-mobile-logo").delay(500).fadeIn(1000);
+ //portfolio-button-mobile
+  $("#portfolio-button-mobile").css("display", "none");
+  $("#portfolio-button-mobile").delay(1500).fadeIn(1000);
+
+
 	/*Clicking on social media button on home page*/
 	var socClicked = false;
 	$(".home-soc-button").click(function(){

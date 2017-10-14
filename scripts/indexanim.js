@@ -1,3 +1,11 @@
+$(function () {
+  $('.loader').loader();
+
+  var progr = 1;
+  setInterval(function () {
+    $('.loader').loader('setProgress', ++progr);
+  }, 100);
+});
 /*Adds n number of dots underslideshow*/
 function add(n){
 	var $active_dot = $("<li class='single-dot active-dot'> </li>");

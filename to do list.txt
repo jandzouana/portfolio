@@ -1,6 +1,6 @@
 
 UI
-- add drop down for social media
+- change size of about me page to be fixed
 - fix monster cutoff thing
 - loading screen
 

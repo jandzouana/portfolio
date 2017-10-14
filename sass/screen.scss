@@ -159,6 +159,11 @@
 
 }
 
+.loader-container{
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
 .loader {
   width: 100px;
   height: 100px;

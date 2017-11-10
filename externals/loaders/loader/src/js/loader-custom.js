@@ -4,10 +4,10 @@
 	var pluginName = "loader",
 			defaults = {
 				progress: 0,
-				frontSpeed: 0.021,
+				frontSpeed: 0.071,
 				frontColor: '#0074D9',
 				frontOpacity: 0.5,
-				backSpeed: 0.025,
+				backSpeed: 0.075,
 				backColor: '#0074D9',
 				backOpacity: 0.2
 			},

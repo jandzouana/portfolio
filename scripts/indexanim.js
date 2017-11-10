@@ -17,6 +17,7 @@ function add(n){
 }
 $(document).ready(function(){
 	/*Make logo and portfolio button appear*/
+  $("body").fadeIn("slow");
 	$("#home-mobile-logo").css("display", "none");
 	$("#home-mobile-logo").delay(500).fadeIn(1000);
  //portfolio-button-mobile

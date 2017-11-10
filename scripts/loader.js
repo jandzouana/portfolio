@@ -7,6 +7,7 @@
         img = document.images,
         c = 0,
         tot = img.length;
+    alert ("Total images: "+tot);
     if(tot == 0) return doneLoading();
 
     function imgLoaded(){
@@ -31,7 +32,7 @@
   }
   document.addEventListener('DOMContentLoaded', loadbar, false);
 }());
-$(window).load(function(){
+$(document).ready(function(){
    // PAGE IS FULLY LOADED
    // FADE OUT YOUR OVERLAYING DIV
    $('#overlay').fadeOut();

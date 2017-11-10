@@ -19,8 +19,42 @@
 	box-sizing: border-box;
 }
 body{
-	display: none;
+	// hides body then fades it in when page is loaded
+	//display: none;
 }
+// loader style
+#overlay{
+	margin: 0px;
+	font-family: Aracne;
+	letter-spacing: 0.75em;
+  position:fixed;
+  z-index:99999;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  //background:rgba(0,0,0,0.9);
+	background-color: black;
+  transition: 1s 0.4s;
+}
+#progress{
+  height:1px;
+  background:#fff;
+  position:absolute;
+  width:0;                /* will be increased by JS */
+  top:50%;
+}
+#progstat{
+  font-size:40px;
+  letter-spacing: 3px;
+  position:absolute;
+  top:50%;
+  margin-top:-50px;
+  width:100%;
+  text-align:center;
+  color:#fff;
+}
+
 .home-soc-group{
 	margin-top: 10px;
 	margin-right: 10px;

@@ -1,11 +1,3 @@
-$(function () {
-  $('.loader').loader();
-
-  var progr = 1;
-  setInterval(function () {
-    $('.loader').loader('setProgress', ++progr);
-  }, 100);
-});
 /*Adds n number of dots underslideshow*/
 function add(n){
 	var $active_dot = $("<li class='single-dot active-dot'> </li>");
@@ -15,9 +7,13 @@ function add(n){
 		$(".dots ul").append($dot);
 	}
 }
+
+
 $(document).ready(function(){
 	/*Make logo and portfolio button appear*/
-  $("body").fadeIn("slow");
+  //$(".grid").fadeIn("slow");
+//  $(".grid").css("display", "flex");
+
 	$("#home-mobile-logo").css("display", "none");
 	$("#home-mobile-logo").delay(500).fadeIn(1000);
  //portfolio-button-mobile
@@ -217,4 +213,15 @@ $(document).ready(function(){
 	}
 
 }
+*/
+
+/*
+$(function () {
+  $('.loader').loader();
+
+  var progr = 1;
+  setInterval(function () {
+    $('.loader').loader('setProgress', ++progr);
+  }, 100);
+});
 */

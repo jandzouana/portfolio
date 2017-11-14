@@ -7,19 +7,21 @@ function add(n){
 		$(".dots ul").append($dot);
 	}
 }
-
+/*
+$(window).load(function(){
+  /*Make parts of doc appear on page load
+  $(".fadeInOnStart").fadeIn("slow");
+  $(".fadeInOnStart").css("display", "flex");
+});
+*/
 
 $(document).ready(function(){
-	/*Make logo and portfolio button appear*/
-  //$(".grid").fadeIn("slow");
-//  $(".grid").css("display", "flex");
 
 	$("#home-mobile-logo").css("display", "none");
-	$("#home-mobile-logo").delay(500).fadeIn(1000);
+	$("#home-mobile-logo").delay(750).fadeIn(1000);
  //portfolio-button-mobile
   $("#portfolio-button-mobile").css("display", "none");
   $("#portfolio-button-mobile").delay(1500).fadeIn(1000);
-
 
 	/*Clicking on social media button on home page*/
 	var socClicked = false;

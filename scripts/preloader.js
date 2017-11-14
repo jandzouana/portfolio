@@ -14,5 +14,7 @@ function PreloadImage (src) {
     img.src = src;
 }
 
-PreloadImage ("/pictures/characters/1med.jpg");
-PreloadImage ("/pictures/characters/2med.jpg");
+window.onload = function(){
+  PreloadImage ("/pictures/characters/1med.jpg");
+  PreloadImage ("/pictures/characters/2med.jpg");
+}();

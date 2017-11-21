@@ -10,7 +10,6 @@
     <script type="text/javascript" src="../../../scripts/indexanim.js"></script>
 		<script type="text/javascript" src="../../../scripts/pagefade.js"></script>
 		<script src="http://cdn.wideskyhosting.com/js/jquery.cycle.js"></script>
-    <script type="text/javascript" src="../../../scripts/preloader.js"></script>
 
 		<link rel="icon" href="../../../pictures/brand/logovec4.png">
 
@@ -20,6 +19,13 @@
 
   </head>
   <body class="fadeInOnStart">
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+    <div id="overlay">
+      <div id="progstat"></div>
+      <div id="progress"></div>
+    </div>
 		<div class="container">
 			<nav class="mob-nav-bar">
 				<img class = "nav-logo" src="../../../pictures/brand/logovec4.png" alt="logo">
@@ -85,13 +91,13 @@
 					<li>
 						<div id= "soc3" class="social-media">
 							<a class="iconcon" href="http://youtube.com/jessicaworks951" target="_blank">
-		            <img class="icon" id="youtube" src="../icons/ytw.svg" alt="youtube">
+		            <img class="icon" id="youtube" src="../../../icons/ytw.svg" alt="youtube">
 		          </a>
 							<a class="iconcon" id = "link" href="http://instagram.com/animatedjess" target="_blank">
-								<img class="icon" src="../icons/igw.svg" alt="instagram">
+								<img class="icon" src="../../../icons/igw.svg" alt="instagram">
 							</a>
 							<a class="iconcon" href="http://twitter.com/jebranart" target="_blank">
-								<img class="icon" src="../icons/twitterw.svg" alt="twitter">
+								<img class="icon" src="../../../icons/twitterw.svg" alt="twitter">
 							</a>
 							<a class="iconcon" href="http://thejandz.wordpress.com" target="_blank">
 								<img class="icon" src="../../../icons/wpw.svg" alt="wordpress">
@@ -123,5 +129,6 @@
 				<div class = "dots"><ul></ul></div>
 			</main>
 		</div>
+    <script type="text/javascript" src="../../../scripts/preloader.js"></script>
 	</body>
 </html>

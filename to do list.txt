@@ -6,3 +6,6 @@ UI
 
 Website
 - Find host
+
+Other
+- Fix path to icons in menu

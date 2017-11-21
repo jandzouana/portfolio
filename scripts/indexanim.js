@@ -18,10 +18,10 @@ $(window).load(function(){
 $(document).ready(function(){
 
 	$("#home-mobile-logo").css("display", "none");
-	$("#home-mobile-logo").delay(750).fadeIn(1000);
+	$("#home-mobile-logo").delay(1250).fadeIn(1000);
  //portfolio-button-mobile
   $("#portfolio-button-mobile").css("display", "none");
-  $("#portfolio-button-mobile").delay(1500).fadeIn(1000);
+  $("#portfolio-button-mobile").delay(2000).fadeIn(1000);
 
 	/*Clicking on social media button on home page*/
 	var socClicked = false;

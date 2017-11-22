@@ -72,5 +72,5 @@ var images_final = [
     "/pictures/sketches/6sm.jpg",
     "/pictures/sketches/7sm.jpg"
       ];
-  document.addEventListener('DOMContentLoaded', loadbar(images_temp), false);
+  document.addEventListener('DOMContentLoaded', loadbar(images_final), false);
 }());

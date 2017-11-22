@@ -87,5 +87,5 @@ var images_final = [
     "/pictures/digital/12sm.jpg",
     "/pictures/digital/13sm.jpg"
     ];
-  document.addEventListener('DOMContentLoaded', loadbar(images_temp), false);
+  document.addEventListener('DOMContentLoaded', loadbar(images_final), false);
 }());

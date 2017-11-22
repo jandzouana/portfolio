@@ -1,3 +1,6 @@
+// Example with different callback function
+//$('.slide').bgLoaded({
+
 (function(){
   function id(v){ return document.getElementById(v); }
   function loadbar() {
@@ -7,7 +10,7 @@
         img = document.images,
         c = 0,
         tot = img.length;
-    alert ("Total images: "+tot);
+    //alert ("Total images: "+tot);
     if(tot == 0) return doneLoading();
 
     function imgLoaded(){
@@ -32,8 +35,3 @@
   }
   document.addEventListener('DOMContentLoaded', loadbar, false);
 }());
-$(document).ready(function(){
-   // PAGE IS FULLY LOADED
-   // FADE OUT YOUR OVERLAYING DIV
-   $('#overlay').fadeOut();
-});

@@ -3,6 +3,11 @@ UI
 - change size of about me page to be fixed
 - fix monster cutoff thing
 - loading screen
+- Change year of copyright
+- CHANGE IMAGE TEMP TO FINAL IN PRELAODER
 
 Website
 - Find host
+
+Other
+- Fix path to icons in menu

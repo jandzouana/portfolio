@@ -10,7 +10,7 @@
         regimgtot = img.length,
         images_size = input_images.length;
         tot = regimgtot + images_size;
-    alert ("Total images: " + tot);
+    //alert ("Total images: " + tot);
     if(tot == 0) return doneLoading();
 
     function imgLoaded(){
@@ -49,38 +49,38 @@
     }
   }
 
-var images_temp = ["/jessica/portfolio/pictures/characters/1med.jpg",
-      "/jessica/portfolio/pictures/characters/2med.jpg",
-      "/jessica/portfolio/pictures/characters/3med.jpg",
-      "/jessica/portfolio/pictures/characters/4med.jpg",
-      "/jessica/portfolio/pictures/characters/5med.jpg",
-      "/jessica/portfolio/pictures/characters/6med.jpg",
-      "/jessica/portfolio/pictures/characters/7med.jpg",
-      "/jessica/portfolio/pictures/characters/8med.jpg",
-      "/jessica/portfolio/pictures/characters/9med.jpg",
-      "/jessica/portfolio/pictures/characters/10med.jpg"
+var images_temp = ["/jessica/portfolio/pictures/characters2/1med.jpg",
+      "/jessica/portfolio/pictures/characters2/2med.jpg",
+      "/jessica/portfolio/pictures/characters2/3med.jpg",
+      "/jessica/portfolio/pictures/characters2/4med.jpg",
+      "/jessica/portfolio/pictures/characters2/5med.jpg",
+      "/jessica/portfolio/pictures/characters2/6med.jpg",
+      "/jessica/portfolio/pictures/characters2/7med.jpg",
+      "/jessica/portfolio/pictures/characters2/8med.jpg",
+      "/jessica/portfolio/pictures/characters2/9med.jpg",
+      "/jessica/portfolio/pictures/characters2/10med.jpg"
       ];
 var images_final = [
-    "/pictures/characters/1med.jpg",
-    "/pictures/characters/2med.jpg",
-    "/pictures/characters/3med.jpg",
-    "/pictures/characters/4med.jpg",
-    "/pictures/characters/5med.jpg",
-    "/pictures/characters/6med.jpg",
-    "/pictures/characters/7med.jpg",
-    "/pictures/characters/8med.jpg",
-    "/pictures/characters/9med.jpg",
-    "/pictures/characters/10med.jpg",
-    "/pictures/characters/1sm.jpg",
-    "/pictures/characters/2sm.jpg",
-    "/pictures/characters/3sm.jpg",
-    "/pictures/characters/4sm.jpg",
-    "/pictures/characters/5sm.jpg",
-    "/pictures/characters/6sm.jpg",
-    "/pictures/characters/7sm.jpg",
-    "/pictures/characters/8sm.jpg",
-    "/pictures/characters/9sm.jpg",
-    "/pictures/characters/10sm.jpg"
+    "/pictures/characters2/1med.jpg",
+    "/pictures/characters2/2med.jpg",
+    "/pictures/characters2/3med.jpg",
+    "/pictures/characters2/4med.jpg",
+    "/pictures/characters2/5med.jpg",
+    "/pictures/characters2/6med.jpg",
+    "/pictures/characters2/7med.jpg",
+    "/pictures/characters2/8med.jpg",
+    "/pictures/characters2/9med.jpg",
+    "/pictures/characters2/10med.jpg",
+    "/pictures/characters2/1sm.jpg",
+    "/pictures/characters2/2sm.jpg",
+    "/pictures/characters2/3sm.jpg",
+    "/pictures/characters2/4sm.jpg",
+    "/pictures/characters2/5sm.jpg",
+    "/pictures/characters2/6sm.jpg",
+    "/pictures/characters2/7sm.jpg",
+    "/pictures/characters2/8sm.jpg",
+    "/pictures/characters2/9sm.jpg",
+    "/pictures/characters2/10sm.jpg"
     ];
 
   document.addEventListener('DOMContentLoaded', loadbar(images_temp), false);

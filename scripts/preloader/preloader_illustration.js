@@ -10,7 +10,7 @@
         regimgtot = img.length,
         images_size = input_images.length;
         tot = regimgtot + images_size;
-    alert ("Total images: " + tot);
+    //alert ("Total images: " + tot);
     if(tot == 0) return doneLoading();
 
     function imgLoaded(){
@@ -49,39 +49,43 @@
     }
   }
 
-var images_temp = ["/jessica/portfolio/pictures/characters/1med.jpg",
-      "/jessica/portfolio/pictures/characters/2med.jpg",
-      "/jessica/portfolio/pictures/characters/3med.jpg",
-      "/jessica/portfolio/pictures/characters/4med.jpg",
-      "/jessica/portfolio/pictures/characters/5med.jpg",
-      "/jessica/portfolio/pictures/characters/6med.jpg",
-      "/jessica/portfolio/pictures/characters/7med.jpg",
-      "/jessica/portfolio/pictures/characters/8med.jpg",
-      "/jessica/portfolio/pictures/characters/9med.jpg",
-      "/jessica/portfolio/pictures/characters/10med.jpg"
+var images_temp = ["/jessica/portfolio/pictures/digital/1med.jpg",
+      "/jessica/portfolio/pictures/digital/2med.jpg",
+      "/jessica/portfolio/pictures/digital/3med.jpg",
+      "/jessica/portfolio/pictures/digital/4med.jpg",
+      "/jessica/portfolio/pictures/digital/5med.jpg",
+      "/jessica/portfolio/pictures/digital/6med.jpg",
+      "/jessica/portfolio/pictures/digital/7med.jpg",
+      "/jessica/portfolio/pictures/digital/8med.jpg",
+      "/jessica/portfolio/pictures/digital/9med.jpg",
+      "/jessica/portfolio/pictures/digital/10med.jpg"
       ];
 var images_final = [
-    "/pictures/characters/1med.jpg",
-    "/pictures/characters/2med.jpg",
-    "/pictures/characters/3med.jpg",
-    "/pictures/characters/4med.jpg",
-    "/pictures/characters/5med.jpg",
-    "/pictures/characters/6med.jpg",
-    "/pictures/characters/7med.jpg",
-    "/pictures/characters/8med.jpg",
-    "/pictures/characters/9med.jpg",
-    "/pictures/characters/10med.jpg",
-    "/pictures/characters/1sm.jpg",
-    "/pictures/characters/2sm.jpg",
-    "/pictures/characters/3sm.jpg",
-    "/pictures/characters/4sm.jpg",
-    "/pictures/characters/5sm.jpg",
-    "/pictures/characters/6sm.jpg",
-    "/pictures/characters/7sm.jpg",
-    "/pictures/characters/8sm.jpg",
-    "/pictures/characters/9sm.jpg",
-    "/pictures/characters/10sm.jpg"
+    "/pictures/digital/1med.jpg",
+    "/pictures/digital/2med.jpg",
+    "/pictures/digital/3med.jpg",
+    "/pictures/digital/4med.jpg",
+    "/pictures/digital/5med.jpg",
+    "/pictures/digital/6med.jpg",
+    "/pictures/digital/7med.jpg",
+    "/pictures/digital/8med.jpg",
+    "/pictures/digital/9med.jpg",
+    "/pictures/digital/10med.jpg",
+    "/pictures/digital/11med.jpg",
+    "/pictures/digital/12med.jpg",
+    "/pictures/digital/13med.jpg",
+    "/pictures/digital/1sm.jpg",
+    "/pictures/digital/2sm.jpg",
+    "/pictures/digital/3sm.jpg",
+    "/pictures/digital/4sm.jpg",
+    "/pictures/digital/5sm.jpg",
+    "/pictures/digital/6sm.jpg",
+    "/pictures/digital/7sm.jpg",
+    "/pictures/digital/8sm.jpg",
+    "/pictures/digital/9sm.jpg",
+    "/pictures/digital/11sm.jpg",
+    "/pictures/digital/12sm.jpg",
+    "/pictures/digital/13sm.jpg"
     ];
-
   document.addEventListener('DOMContentLoaded', loadbar(images_temp), false);
 }());

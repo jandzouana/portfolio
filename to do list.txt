@@ -2,9 +2,8 @@
 UI
 - change size of about me page to be fixed
 - fix monster cutoff thing
-- loading screen
-- Change year of copyright
-- CHANGE IMAGE TEMP TO FINAL IN PRELAODER
+- CHANGE IMAGE TEMP TO FINAL IN PRELOADER
+- Add new art
 
 Website
 - Find host

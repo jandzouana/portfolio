@@ -6,6 +6,7 @@ UI
 - change main color
 Website
 - Find host
+- Delete unused hosts
 
 Other
 

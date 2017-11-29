@@ -189,6 +189,12 @@
 	#k10 {
 		background-image: url(../pictures/characters2/10med.jpg);
 	}
+	#k11 {
+		background-image: url(../pictures/characters2/11med.jpg);
+	}
+	#k12 {
+		background-image: url(../pictures/characters2/11med.jpg);
+	}
 }
 
 @media only screen and (max-width: $cut-off) and (orientation: landscape) and (max-height: $max-land-height){
@@ -215,6 +221,7 @@
 
 }
 @media only screen and (min-width:$cut-off+1){
+	// Note: Need to also add to preloader function for it to preload
 	#i1 {
 		background-image: url(../pictures/characters/1.jpg);
 	}
@@ -281,5 +288,11 @@
 	}
 	#k10 {
 		background-image: url(../pictures/characters2/10.jpg);
+	}
+	#k11 {
+		background-image: url(../pictures/characters2/11.jpg);
+	}
+	#k12 {
+		background-image: url(../pictures/characters2/12.jpg);
 	}
 }

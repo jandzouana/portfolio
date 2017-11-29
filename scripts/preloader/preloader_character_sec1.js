@@ -83,5 +83,5 @@ var images_final = [
     "/pictures/characters/10sm.jpg"
     ];
 
-  document.addEventListener('DOMContentLoaded', loadbar(images_temp), false);
+  document.addEventListener('DOMContentLoaded', loadbar(images_final), false);
 }());

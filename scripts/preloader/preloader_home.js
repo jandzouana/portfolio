@@ -10,7 +10,7 @@
         regimgtot = img.length,
         images_size = input_images.length;
         tot = regimgtot + images_size;
-    alert ("Total images: " + tot);
+    //alert ("Total images: " + tot);
     if(tot == 0) return doneLoading();
 
     function imgLoaded(){

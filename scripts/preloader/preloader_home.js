@@ -56,5 +56,5 @@ var images_final = [
     "/pictures/collage.jpg",
     ];
 
-  document.addEventListener('DOMContentLoaded', loadbar(images_temp), false);
+  document.addEventListener('DOMContentLoaded', loadbar(images_final), false);
 }());

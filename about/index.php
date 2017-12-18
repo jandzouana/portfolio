@@ -56,19 +56,19 @@ session_start();
 				<div class = "footer">
 					<div id= "soc2" class="social-media">
 						<a class="iconcon" href="http://youtube.com/jessicaworks951" target="_blank">
-	            <img class="icon" id="youtube" src="../icons/ytw.svg" alt="youtube">
+	            <img class="icon" id="youtube" src="../myicons/ytw.svg" alt="youtube">
 	          </a>
 						<a class="iconcon" id = "link" href="http://instagram.com/animatedjess" target="_blank">
-							<img class="icon" src="../icons/igw.svg" alt="instagram">
+							<img class="icon" src="../myicons/igw.svg" alt="instagram">
 						</a>
 						<a class="iconcon" href="http://twitter.com/jebranart" target="_blank">
-							<img class="icon" src="../icons/twitterw.svg" alt="twitter">
+							<img class="icon" src="../myicons/twitterw.svg" alt="twitter">
 						</a>
 						<a class="iconcon" href="http://thejandz.wordpress.com" target="_blank">
-							<img class="icon" src="../icons/wpw.svg" alt="wordpress">
+							<img class="icon" src="../myicons/wpw.svg" alt="wordpress">
 						</a>
 						<a class="iconcon" href="http://github.com/jandzouana" target="_blank">
-							<img class="icon" src="../icons/ghw.svg" alt="gh">
+							<img class="icon" src="../myicons/ghw.svg" alt="gh">
 						</a>
 					</div>
 					<div id="copy"><h3>Copyright © 2017 Jessica Andzouana</h3></div>
@@ -86,19 +86,19 @@ session_start();
 					<li>
 						<div id= "soc3" class="social-media">
 							<a class="iconcon" href="http://youtube.com/jessicaworks951" target="_blank">
-		            <img class="icon" id="youtube" src="../icons/ytw.svg" alt="youtube">
+		            <img class="icon" id="youtube" src="../myicons/ytw.svg" alt="youtube">
 		          </a>
 							<a class="iconcon" id = "link" href="http://instagram.com/animatedjess" target="_blank">
-								<img class="icon" src="../icons/igw.svg" alt="instagram">
+								<img class="icon" src="../myicons/igw.svg" alt="instagram">
 							</a>
 							<a class="iconcon" href="http://twitter.com/jebranart" target="_blank">
-								<img class="icon" src="../icons/twitterw.svg" alt="twitter">
+								<img class="icon" src="../myicons/twitterw.svg" alt="twitter">
 							</a>
 							<a class="iconcon" href="http://thejandz.wordpress.com" target="_blank">
-								<img class="icon" src="../icons/wpw.svg" alt="wordpress">
+								<img class="icon" src="../myicons/wpw.svg" alt="wordpress">
 							</a>
 							<a class="iconcon" href="http://github.com/jandzouana" target="_blank">
-								<img class="icon" src="../icons/github.svg" alt="github">
+								<img class="icon" src="../myicons/github.svg" alt="github">
 							</a>
 						</div>
 						<div id="copy"><h3>Copyright © 2017 Jessica Andzouana</h3></div>
@@ -147,13 +147,15 @@ When I started attending university, I wanted to extend my knowledge beyond the 
 										$name = $_POST['name'];
 										$email = $_POST['email'];
 										$message = $_POST['message'];
-										$from = 'From: TangledDemo';
-										$to = 'jebranart@gmail.com';
+                    $headers = "MIME-Version: 1.0\r\n";
+                    $headers .= "Content-type:text/html;charset=UTF-8\r\n";
+                    $headers .= "From: JessPortfolio\r\n";
+                    $to = 'jebranart@gmail.com';
 										$subject = 'Message from portfolio';
 
 										$body = "From: $name\n"."E-mail: $email\n"."Message:\n"."$message";
 
-										if (mail ($to, $subject, $body, $from)) {
+										if (mail ($to, $subject, $body, $headers)) {
 											echo "<script>
 													$('#submit').css('display', 'none');
 											</script>";

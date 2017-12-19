@@ -71,7 +71,7 @@ session_start();
 							<img class="icon" src="../myicons/ghw.svg" alt="gh">
 						</a>
 					</div>
-					<div id="copy"><h3>Copyright © 2017 Jessica Andzouana</h3></div>
+					<div id="copy"><h3>Copyright © 2018 Jessica Andzouana</h3></div>
 				</div>
 			</div>
 			<nav class="bot-nav">
@@ -101,7 +101,7 @@ session_start();
 								<img class="icon" src="../myicons/github.svg" alt="github">
 							</a>
 						</div>
-						<div id="copy"><h3>Copyright © 2017 Jessica Andzouana</h3></div>
+						<div id="copy"><h3>Copyright © 2018 Jessica Andzouana</h3></div>
 					</li>
 				</ul>
 			</nav>

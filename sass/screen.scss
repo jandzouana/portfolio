@@ -38,11 +38,11 @@ body{
 .mob-nav-bar{
 	display: block;
 	height: $nav-height;
-	width: 100%;
+	width: 10%;
 	//background-color: $menu-nav;
 	//background: transparent;
 	position: fixed;
-	z-index: 4;
+	z-index: 5;
 	//@include box-shadow2(0, 1px, 3px, darken(#203449, 6%))
 }
 
@@ -56,9 +56,12 @@ body{
 
 /*Navigation + logo + footer*/
 .menu{
+	z-index: 3;
+	//margin-top: $mob
 	border-radius: 5px;
-	z-index: 2; //overlay on page
-	background-color: $menu;
+	//z-index: 2; //overlay on page
+	//background-color: $menu;
+	background-color: $home-menu-bg;
 	max-width: $menu-width;
 	width: 100%;
 	height: 100%;
@@ -73,6 +76,7 @@ body{
 }
 
 .menu-button {
+	z-index: 4;
 	display: inline-block;
 	padding: .5em;
 	//background-color: $menu-nav;
@@ -118,7 +122,7 @@ body{
 		display: none;
 		flex-direction: column;
 		justify-content: space-around;
-		background-color: $menu-sub;
+		background-color: darken($home-menu-bg, 15%);
 	}
 	.cont-subs{
 		.cont-subs-text{
@@ -214,7 +218,7 @@ body{
 	height: $icon-size*.8;
 }
 .icon2 {
-	opacity: .35;
+	opacity: .45;
 	height: 100%;
 	width: 100%;
 	padding: auto;
@@ -344,7 +348,7 @@ body{
 
 	#home-background{
 		width: 100%;
-		height: 80%;
+		height: 75%;
 		//border: 2px solid blue;
 		background-image: url("../pictures/collage.jpg");
 		background-position:center;
@@ -369,7 +373,8 @@ body{
 	#home-mobile-footer{
 		//border: 2px solid red;
 		width: 100%;
-		height: 20%;
+		height: 25%;
+    padding-bottom: 30px;
 		min-height: $home-mob-grid-min*.2;
 		display: flex;
 		justify-content: center;
@@ -883,7 +888,7 @@ soc 2 == social media icons in footer*/
 @media only screen and (max-width:$cut-off){
 	.mob-nav-bar{
 		display: block;
-		position: fixed;
+		position: absolute;
 	}
 	.container{
 		flex-direction: column;
@@ -894,8 +899,8 @@ soc 2 == social media icons in footer*/
 	}
 	.menu{
 		border-radius: 0px;
-		background-color: $menu-mob;
-		position: fixed;
+		//background-color: $menu-mob;
+		position: absolute;
 		top: 0;
 		display: none;
 		max-width: 100%;
@@ -961,6 +966,9 @@ soc 2 == social media icons in footer*/
 			opacity: .75;
 			transition: opacity .2s;
 		}
+	}
+	.menu-button{
+		z-index: 30 !important;
 	}
 
 }

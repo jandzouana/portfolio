@@ -568,7 +568,7 @@ soc 2 == social media icons in footer*/
 .index-main {
 	display: flex;
 	flex-direction: column;
-	height: 70 %;
+	height: 70%;
 }
 /*Picture that shows up in mobile version instead of navigation links*/
 #profile{
@@ -633,8 +633,10 @@ soc 2 == social media icons in footer*/
 	width: 100%;
 	height: 100%;
 	background-image: url("../pictures/gradient2.jpg");
+
 	background-size: contain;
 	opacity: 0.05;
+  display: none;
 	border-radius:  2px;
 
 }

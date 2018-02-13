@@ -568,7 +568,7 @@ soc 2 == social media icons in footer*/
 .index-main {
 	display: flex;
 	flex-direction: column;
-	height: 80%;
+	height: 70 %;
 }
 /*Picture that shows up in mobile version instead of navigation links*/
 #profile{
@@ -634,7 +634,7 @@ soc 2 == social media icons in footer*/
 	height: 100%;
 	background-image: url("../pictures/gradient2.jpg");
 	background-size: contain;
-	opacity: 0.35;
+	opacity: 0.05;
 	border-radius:  2px;
 
 }
@@ -649,11 +649,13 @@ soc 2 == social media icons in footer*/
 	align-items: center;
 
 		#portfolio-button{
+      display: none;
 		text-align: center;
 		text-decoration: none;
 		font-size: 46px;
 		letter-spacing: 0.5em;
 		color: $portfolio-btn;
+    //order: 1px solid red;
 		font-family: Aracne;
 		&:hover{
 			color: orange; transition: color .15s;

@@ -56,22 +56,22 @@ session_start();
 				<div class = "footer">
 					<div id= "soc2" class="social-media">
 						<a class="iconcon" href="http://youtube.com/jessicaworks951" target="_blank">
-	            <img class="icon" id="youtube" src="../icons/ytw.svg" alt="youtube">
+	            <img class="icon" id="youtube" src="../myicons/ytw.svg" alt="youtube">
 	          </a>
 						<a class="iconcon" id = "link" href="http://instagram.com/animatedjess" target="_blank">
-							<img class="icon" src="../icons/igw.svg" alt="instagram">
+							<img class="icon" src="../myicons/igw.svg" alt="instagram">
 						</a>
 						<a class="iconcon" href="http://twitter.com/jebranart" target="_blank">
-							<img class="icon" src="../icons/twitterw.svg" alt="twitter">
+							<img class="icon" src="../myicons/twitterw.svg" alt="twitter">
 						</a>
 						<a class="iconcon" href="http://thejandz.wordpress.com" target="_blank">
-							<img class="icon" src="../icons/wpw.svg" alt="wordpress">
+							<img class="icon" src="../myicons/wpw.svg" alt="wordpress">
 						</a>
 						<a class="iconcon" href="http://github.com/jandzouana" target="_blank">
-							<img class="icon" src="../icons/ghw.svg" alt="gh">
+							<img class="icon" src="../myicons/ghw.svg" alt="gh">
 						</a>
 					</div>
-					<div id="copy"><h3>Copyright © 2017 Jessica Andzouana</h3></div>
+					<div id="copy"><h3>Copyright © 2018 Jessica Andzouana</h3></div>
 				</div>
 			</div>
 			<nav class="bot-nav">
@@ -86,22 +86,22 @@ session_start();
 					<li>
 						<div id= "soc3" class="social-media">
 							<a class="iconcon" href="http://youtube.com/jessicaworks951" target="_blank">
-		            <img class="icon" id="youtube" src="../icons/ytw.svg" alt="youtube">
+		            <img class="icon" id="youtube" src="../myicons/ytw.svg" alt="youtube">
 		          </a>
 							<a class="iconcon" id = "link" href="http://instagram.com/animatedjess" target="_blank">
-								<img class="icon" src="../icons/igw.svg" alt="instagram">
+								<img class="icon" src="../myicons/igw.svg" alt="instagram">
 							</a>
 							<a class="iconcon" href="http://twitter.com/jebranart" target="_blank">
-								<img class="icon" src="../icons/twitterw.svg" alt="twitter">
+								<img class="icon" src="../myicons/twitterw.svg" alt="twitter">
 							</a>
 							<a class="iconcon" href="http://thejandz.wordpress.com" target="_blank">
-								<img class="icon" src="../icons/wpw.svg" alt="wordpress">
+								<img class="icon" src="../myicons/wpw.svg" alt="wordpress">
 							</a>
 							<a class="iconcon" href="http://github.com/jandzouana" target="_blank">
-								<img class="icon" src="../icons/github.svg" alt="github">
+								<img class="icon" src="../myicons/github.svg" alt="github">
 							</a>
 						</div>
-						<div id="copy"><h3>Copyright © 2017 Jessica Andzouana</h3></div>
+						<div id="copy"><h3>Copyright © 2018 Jessica Andzouana</h3></div>
 					</li>
 				</ul>
 			</nav>
@@ -110,8 +110,10 @@ session_start();
 					<div class="box1">
 						<div class="text">
 							<h2>About me</h2>
-							<h3>My name is Jessica Andzouana and I am a visual artist and programmer. I have recently graduated from Santa Clara University where I was studying Computer Science and Studio Art. Artistically, I have experience with various digital and traditional mediums, but I am primarily interested in animation and illustration. I love designing characters, and no matter which medium I choose, characters become central to my art. Animation is especially appealing to me because it allows me bring characters to life by giving them personality, emotion, and thoughts through a visual narrative. <br> <br>
-When I started attending university, I wanted to extend my knowledge beyond the arts and I was particularly drawn to computer science. As far as programming, my interests include front-end web development, software development and UI/UX design. I really enjoy thinking analytically to solve simple and complex problems with programming. Lately my major inclination has been towards Virtual Reality and Augmented Reality. I am currently creating various interactive experiences using Unity to learn how to design immersive, user-friendly interfaces. These projects allow me to use my programming background to fulfill my creative vision while exploring these emerging media.
+							<h3>
+                My name is Jessica Andzouana and I am a visual artist and programmer. I am a focused and creative programmer with experience in Unity development, front-end development and digital art and design.  I am passionate about emerging technologies such as VR and AR and I constantly seek opportunities to learn, grow and transform the industry. My unique background, both as a programmer and artist, paired with a highly design conscious mindset, enables me to provide new perspectives to create immersive and user centered applications and experiences. <br> <br>
+                Artistically, I have experience with various digital and traditional mediums. Animation and storytelling in VR is especially appealing to me because it allows me bring characters to life by giving them personality, emotion, and thoughts through a visual narrative.  No matter which medium I choose for creative expression, people or characters become central to my art.
+                On this website you will find collections of my artistic work. If you are interested in seeing my technical projects, please contact me through the form.
 							</h3>
 						</div>
 					</div>
@@ -147,13 +149,15 @@ When I started attending university, I wanted to extend my knowledge beyond the 
 										$name = $_POST['name'];
 										$email = $_POST['email'];
 										$message = $_POST['message'];
-										$from = 'From: TangledDemo';
-										$to = 'jebranart@gmail.com';
+                    $headers = "MIME-Version: 1.0\r\n";
+                    $headers .= "Content-type:text/html;charset=UTF-8\r\n";
+                    $headers .= "From: JessPortfolio\r\n";
+                    $to = 'jebranart@gmail.com';
 										$subject = 'Message from portfolio';
 
 										$body = "From: $name\n"."E-mail: $email\n"."Message:\n"."$message";
 
-										if (mail ($to, $subject, $body, $from)) {
+										if (mail ($to, $subject, $body, $headers)) {
 											echo "<script>
 													$('#submit').css('display', 'none');
 											</script>";

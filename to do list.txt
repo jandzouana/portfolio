@@ -4,8 +4,14 @@ UI
 - fix monster cutoff thing
 - add new art
 - change main color
+- change overlay color/opacity homepage
+- remove about me?
+- change about me contact box
+
+- Change where submit message for mail shows up
 Website
-- Find host
+- Delete unused hosts
+- CHANGE ICONS TO ANOTHER NAAAAME
 
 Other
 

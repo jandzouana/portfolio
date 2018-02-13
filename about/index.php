@@ -113,14 +113,15 @@ session_start();
 							<h3>
                 My name is Jessica Andzouana and I am a visual artist and programmer. I am a focused and creative programmer with experience in Unity development, front-end development and digital art and design.  I am passionate about emerging technologies such as VR and AR and I constantly seek opportunities to learn, grow and transform the industry. My unique background, both as a programmer and artist, paired with a highly design conscious mindset, enables me to provide new perspectives to create immersive and user centered applications and experiences. <br> <br>
                 Artistically, I have experience with various digital and traditional mediums. Animation and storytelling in VR is especially appealing to me because it allows me bring characters to life by giving them personality, emotion, and thoughts through a visual narrative.  No matter which medium I choose for creative expression, people or characters become central to my art.
-                On this website you will find collections of my artistic work. If you are interested in seeing my technical projects, please contact me through the form.
+                On this website you will find collections of my artistic work. If you are interested in seeing my technical projects, please visit my portfolio
+                <a href="https://jandzouana.myportfolio.com" id="port-link" target="_blank"> here.</a>
 							</h3>
 						</div>
 					</div>
 					<div class="link-box">
 						<a href="../docs/artist.pdf" target="_blank"> Artist Statement</a>
 						<a href="../docs/resume.pdf" target="_blank"> Resume </a>
-						<h3 href="#" id="contact-button"> Contact me </h3>
+            <a href="https://jandzouana.myportfolio.com/contact" target="_blank"> Contact Me</a>
 					</div>
 					<section class="contact">
 						<h2 class="contact-header"> Contact me </h2>

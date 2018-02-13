@@ -80,6 +80,17 @@ body{
   color:#fff;
 }
 
+// Portfolio link
+#port-link{
+  font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+  text-decoration: none;
+  &:hover{
+    color: $hover-menu;
+  }
+  color: $tech-port-btn;
+}
 /*Copyright note*/
 #copy{
 	h3{
@@ -220,7 +231,6 @@ body{
 	a{
 		text-decoration: none;
 		cursor: pointer;
-		display: block;
 		padding: 8px 0 15px 0;
 		text-align: center;
 		color: white;
